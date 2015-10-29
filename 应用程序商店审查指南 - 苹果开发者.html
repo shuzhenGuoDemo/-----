@@ -7,29 +7,34 @@
 <link rel="shortcut icon" href="https://developer.apple.com/favicon.ico">
 <link rel="icon" href="https://developer.apple.com/favicon.ico">
 <link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/fonts" type="text/css">
-<link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/base.css" type="text/css">
+<link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/transition-global.css" type="text/css">
+<link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/transition-header.css" type="text/css">
 <link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/adc.css" type="text/css">
-<link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/templates.css" type="text/css">
 <link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/topbar.css" type="text/css">
 <script src="./应用程序商店审查指南 - 苹果开发者_files/prototype.js" type="text/javascript" charset="utf-8"></script>
 <script src="./应用程序商店审查指南 - 苹果开发者_files/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
 <script src="./应用程序商店审查指南 - 苹果开发者_files/browserdetect.js" type="text/javascript" charset="utf-8"></script>
 <script src="./应用程序商店审查指南 - 苹果开发者_files/apple_core.js" type="text/javascript" charset="utf-8"></script>
-<script src="./应用程序商店审查指南 - 苹果开发者_files/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="https://devimages.apple.com.edgekey.net/assets/core/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>-->
 <script src="./应用程序商店审查指南 - 苹果开发者_files/adc_core.js" type="text/javascript" charset="utf-8"></script>
-<script src="./应用程序商店审查指南 - 苹果开发者_files/ac_retina.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="https://devimages.apple.com.edgekey.net/assets/scripts/ac_retina.js" type="text/javascript" charset="utf-8"></script>-->
 <script src="./应用程序商店审查指南 - 苹果开发者_files/topbarDropdown.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	document.write('<link rel="stylesheet" type="text/css" href="https://devimages.apple.com.edgekey.net/assets/styles/script.css" media="screen">');
 </script><link rel="stylesheet" type="text/css" href="./应用程序商店审查指南 - 苹果开发者_files/script.css" media="screen">
 <!-- Augmented Search -->
-<link rel="stylesheet" href="./应用程序商店审查指南 - 苹果开发者_files/augmented_search.css" type="text/css">
+<!--<link rel="stylesheet" href="https://devimages.apple.com.edgekey.net/assets/styles/augmented_search.css" type="text/css">-->
 <script src="./应用程序商店审查指南 - 苹果开发者_files/jquery-1.11.0.min.js"></script>
 <script>jQuery.noConflict();</script>
+<script src="./应用程序商店审查指南 - 苹果开发者_files/jquery.retinate.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="https://devimages.apple.com.edgekey.net/assets/scripts/augmented_search.js"></script>-->
 <script src="./应用程序商店审查指南 - 苹果开发者_files/augmented_search.js"></script>
+<script src="./应用程序商店审查指南 - 苹果开发者_files/global-header.js"></script>
+
 	<title>应用程序商店审查指南 - 苹果开发者</title>
 	<meta name="omni_page" content="App Store Review Guidelines">
 	<meta name="Description" content="The App Store Review Guidelines provide guidance and examples across a range of iOS development topics, including user interface design, functionality, content, and the use of specific technologies. These guidelines are designed to help you prepare your Apps for the approval process.">
+	<meta name="robots" content="noodp,noydir">
 	<style type="text/css">
 		.white #content {width: 800px !important; padding: 50px 90px !important;}
 		.white #content,
@@ -46,40 +51,59 @@
 	</style>
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="./应用程序商店审查指南 - 苹果开发者_files/translateelement.css"></head>
 
-<body class="white hasjs gh-nav-app-store-active">
-	<div id="globalheader-wrapper">
-<nav id="globalheader" data-hires="true" data-hires-status="replaced" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/header/top-gradient-divider_2x.jpg); background-size: 980px 60px;">
-	
-	<h1 data-hires="true"><a href="https://developer.apple.com/" data-hires-status="replaced" onclick="s_objectID=&quot;https://developer.apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/header/developer_2x.png); background-size: 131px 27px;"><font><font>苹果开发者</font></font></a></h1>
-	<ul id="gh-nav">
-		<li id="gh-nav-technologies"><a href="https://developer.apple.com/technologies/" onclick="s_objectID=&quot;https://developer.apple.com/technologies/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>技术</font></font></a></li>
-		<li id="gh-nav-resources"><a href="https://developer.apple.com/resources/" onclick="s_objectID=&quot;https://developer.apple.com/resources/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>资源</font></font></a></li>
-		<li id="gh-nav-programs"><a href="https://developer.apple.com/programs/" onclick="s_objectID=&quot;https://developer.apple.com/programs/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>计划</font></font></a></li>
-		<li id="gh-nav-support"><a href="https://developer.apple.com/support/" onclick="s_objectID=&quot;https://developer.apple.com/support/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>支持</font></font></a></li>
-		<li id="gh-nav-membercenter"><a href="https://developer.apple.com/membercenter/" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>会员中心</font></font></a></li>
-	</ul>
+<body class="white hasjs">
+	<nav id="globalheader" role="navigation" aria-label="Global Navigation">
+  <div id="gh-content" class="gh-content">
+    <ul class="gh-menu">
+      <li id="gh-menu-icon-toggle" class="gh-menu-icon gh-menu-icon-toggle enhance">
+        <button id="gh-svg-icons" class="gh-svg-wrapper">
+          <span class="text-replace"><font><font>菜单</font></font></span>
+          <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-top" enable-background="new 0 0 96 96"><rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-top"></rect></svg>
+          <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-bottom" enable-background="new 0 0 96 96"><rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-bottom"></rect></svg>
+        </button>
+      </li>
+      <li id="gh-menu-icon-home" class="gh-menu-icon gh-menu-icon-home">
+        <a href="https://developer.apple.com/" onclick="s_objectID=&quot;https://developer.apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true">
+          <span class="text-replace"><font><font>苹果开发者</font></font></span>
+        </a>
+      </li>
+    </ul>
+    <div class="gh-nav">
+      <div class="gh-nav-view">
+        <ul class="gh-nav-list">
 
-	<div id="gh-search" data-hires="true" class="chrome">
-		<form action="https://developer.apple.com/search/index.php" method="get" accept-charset="utf-8"><div>
-			<label for="gh-adcsearch">
-				<span class="prettyplaceholder"></span>
-				<div class="search-wrapper blurred empty" data-hires="true"><span class="left" data-hires-status="replaced" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/prettysearch/searchfield_leftcap_2x.png); background-size: 20px 19px;"></span><input type="text" name="q" id="gh-adcsearch" class="adcsearch prettysearch augmented" autocomplete="off" data-hires-status="replaced" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/prettysearch/searchfield_repeat_2x.png); background-size: 2px 19px;"><span class="autocomplete"><span class="spacer"></span><span class="completion"></span></span><span class="right" data-hires-status="replaced" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/prettysearch/searchfield_rightcap_2x.png); background-size: 10px 19px;"></span><div class="reset" data-hires-status="replaced" style="background-image: url(https://devimages.apple.com.edgekey.net/assets/elements/prettysearch/close_2x.gif); background-size: 11px 11px;"></div></div>
-			</label>
-		</div></form>
-	<div class="recommended hidden"><span class="recommended-label"><font><font>推荐结果</font></font></span><ul class="results"></ul></div></div>
+          <li class="gh-tab gh-nav-developer" data-hires="true"><a class="gh-tab-link" href="https://developer.apple.com/" onclick="s_objectID=&quot;https://developer.apple.com/_2&quot;;return this.s_oc?this.s_oc(e):true"><span class="text-replace"><font><font>苹果开发者</font></font></span></a></li>
+          <li class="gh-tab gh-nav-technologies"><a class="gh-tab-link" href="https://developer.apple.com/platforms/" onclick="s_objectID=&quot;https://developer.apple.com/platforms/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>平台</font></font></a></li>
+          <li class="gh-tab gh-nav-resources"><a class="gh-tab-link" href="https://developer.apple.com/resources/" onclick="s_objectID=&quot;https://developer.apple.com/resources/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>资源</font></font></a></li>
+          <li class="gh-tab gh-nav-programs"><a class="gh-tab-link" href="https://developer.apple.com/programs/" onclick="s_objectID=&quot;https://developer.apple.com/programs/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>规划</font></font></a></li>
+          <li class="gh-tab gh-nav-support"><a class="gh-tab-link" href="https://developer.apple.com/support/" onclick="s_objectID=&quot;https://developer.apple.com/support/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>支撑</font></font></a></li>
+          <li class="gh-tab gh-nav-account gh-nav-membercenter">
+            <a class="gh-tab-link" href="https://developer.apple.com/membercenter/" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>会员中心</font></font></a>
+          </li>
+          <li class="gh-tab gh-nav-search">
 
-	<script type="text/javascript">
-		Event.onDOMReady(function() {
-			// Get root path for Global Header Active class
-			ghLocation = location.pathname.split('/')[1];
-			// Make sure it doesn't try to add a file extension to the css class
-			if(ghLocation.include('.')) ghLocation = ghLocation.split('.')[0];
-			// Add Global Header Active State Class
-			$$('body')[0].addClassName('gh-nav-'+location.pathname.split('/')[1]+'-active');
-		});
-	</script>
+            <div id="gh-search" class="gh-search chrome" role="search">
+              <form action="https://developer.apple.com/search/" method="get" class="gh-search-form" id="gh-search-form" role="search">
+
+                <div class="gh-search-input-wrapper">
+                  <label for="gh-search-input" class="text-replace"><font><font>搜索苹果开发者</font></font></label>
+                  <input type="text" name="q" id="gh-search-input" class="augmented gh-search-input" placeholder="Search Apple Developer" autocomplete="off"><span class="autocomplete"><span class="spacer"></span><span class="completion"></span></span>
+                </div>
+
+                <button disabled="disabled" type="submit" id="gh-search-submit" class="gh-search-submit gh-search-magnify"><span class="text-replace"><font><font>搜索苹果开发者</font></font></span></button>
+                <button disabled="" type="reset" id="gh-search-reset" class="gh-search-reset"><span class="text-replace"><font><font>重置</font></font></span></button>
+
+              </form>
+            <div class="recommended hidden"><span class="recommended-label"><font><font>推荐结果</font></font></span><ul class="results"></ul></div></div>
+
+            <a class="gh-search-magnify" href="https://developer.apple.com/search/" onclick="s_objectID=&quot;https://developer.apple.com/search/_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="text-replace"><font><font>搜索苹果开发者</font></font></span></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
-</div>
 
 	<div id="top">
 <!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
@@ -90,7 +114,7 @@ var s_account="appleglobal,appleusdeveloper"
 
 <script type="text/javascript" src="./应用程序商店审查指南 - 苹果开发者_files/s_code_h.js"></script>
 <script type="text/javascript">
-s.pageName=AC.Tracking.pageName();
+s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
 s.channel="www.us.developer"
 
 /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
@@ -98,1003 +122,1009 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 <!-- End SiteCatalyst code version: H.8. -->
 </div>
 
+	<div id="content">
 
-		<div id="content">
+		<header class="icon-title padding-bottom-40">
+			<h1><font><font>应用程序商店审查指南</font></font></h1>
+		</header>
 
-				<header class="icon-title gradient-down-bottom padding-bottom-40">
-					<h1><font><font>应用程序商店审查指南</font></font></h1>
-				</header>
+		<h2 class="padding-top-20"><font><font>简介</font></font></h2>
+		<p class="thirteen"><font><font>我们很高兴你想投资你的才能和时间来开发iOS应用程序。</font><font>这是一个有益的经验 - 无论是专业和财务 - 为开发者数十万，我们希望帮助您加入这个成功的群体。</font><font>我们已经出版了，希望我们的App Store审查指南，他们会帮助你避开问题，当你开发应用程序，并加速您的核准过程，当你提交。</font></font></p>
+		<p class="thirteen"><font><font>我们认为应用程序比书籍或歌曲，这是我们不策展不同。</font><font>如果你想批评宗教，写一本书。</font><font>如果您想要描述性爱，写一本书或一首歌曲，或创建一个医疗应用。</font><font>它可能很复杂，但我们已决定不允许某些类型的应用程序商店的内容。</font><font>它可以帮助保持我们的一些更广泛的主题，记住：</font></font></p>
 
-					<h2 class="padding-top-20"><font><font>介绍</font></font></h2>
-					<p class="thirteen"><font><font>我们很高兴你想投资你的才能和时间来开发iOS应用程序。</font><font class="">这是一个有益的经验 - 无论是专业和财务 - 为开发者数十万，我们希望能帮助您加入这个成功的群体。</font><font>我们已经出版了，希望我们的App Store审查指南，他们会帮助你避开问题，当你开发你的应用程序，并加快您完成审批过程，当你提交。</font></font></p>
+		<ul class="square">
+			<li><font><font>我们有很多的孩子下载大量的应用程序中。</font><font>家长控制工作的伟大，以保护孩子，但你必须做你的一部分了。</font><font>所以知道，我们保持一只眼睛的孩子。</font></font></li>
+			<li><font><font>我们有超过一百万的应用程序在App Store。</font><font>如果你的应用程序没有做一些有用的东西，唯一的，或者提供某种形式的持久的娱乐，或者如果你的应用程序是普通的毛骨悚然，它可能不被接受。</font></font></li>
+			<li><font><font>如果你的应用程序看起来就像是拼凑起来的几天，或者你想获得你的第一个实践应用到店里来打动你的朋友，请振作起来拒绝。</font><font>我们有很多谁不希望自己的应用程序的质量由业余小时包围严重的开发商。</font></font></li>
+			<li><font><font>我们将拒绝应用服务，我们认为这是在该行的任何内容或行为。</font><font>什么行，你问？</font><font>那么，作为最高法院法官曾经说过，“我就知道，当我看到它”。</font><font>我们认为，你也知道，当你穿过它。</font></font></li>
+			<li><font><font>如果你的应用程序被拒绝，我们有一个审查委员会，可以吸引。</font><font>如果您运行的新闻和垃圾我们，它永远不会有帮助。</font></font></li>
+			<li><font><font>如果你试图欺骗系统（例如，企图欺骗审查过程中，从用户窃取数据，复制其他开发人员的工作，或操纵收视率）的应用程序会从商店被删除，您会从开发者开除计划。</font></font></li>
+			<li><font><font>这是一个活的文件，而新的应用提出了新的问题，可能会导致在任何时间的新规则。</font><font>也许你的应用程序将触发此。</font></font></li>
+		</ul>
+		
+		<p class="thirteen"><font><font>最后，我们爱这个东西过了，孝敬你做什么。</font><font>我们真的尽最大努力创造最佳的平台，在全世界为你表达你的才华和谋生了。</font><font>如果这听起来像我们是控制狂，好吧，也许这是因为我们是如此致力于我们的用户，并确保它们与我们的产品品质体验。</font><font>就像几乎所有的你，太。</font></font></p>
+		
+		<h2 class="subhead"><font><font>目录</font></font></h2>
+		<div class="grid2col anchornav divider-bottom padding-bottom-20">
+			<div class="column first">
+				<ol class="toc">
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#terms-conditions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#terms-conditions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>条款和条件</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#functionality" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#functionality_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>功能</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#metadata" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#metadata_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>元数据</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#location" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#location_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>位置</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#push-notifications" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#push-notifications_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>推送通知</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#game-center" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#game-center_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>游戏中心</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#advertising" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#advertising_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>做广告</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#trademarks-trade-dress" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#trademarks-trade-dress_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>商标和商业外观</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#media-content" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#media-content_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>媒体内容</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#user-interface" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#user-interface_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>用户界面</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#purchasing-currencies" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#purchasing-currencies_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>采购与货币</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#scraping-aggregation" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#scraping-aggregation_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>刮痧和聚集</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#damage-device" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#damage-device_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>损害或伤害</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#personal-attacks" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#personal-attacks_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>人身攻击</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#violence" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#violence_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>暴力</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#objectionable-content" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#objectionable-content_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>令人反感的内容</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#privacy" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#privacy_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>隐私</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#pornography" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#pornography_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>色情</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#religion-culture-ethnicity" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#religion-culture-ethnicity_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>宗教，文化和种族</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#contests" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#contests_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>竞赛，抽奖，抽奖，抽奖，赌博</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#charities-contributions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#charities-contributions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>慈善和捐款</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#legal-requirements" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#legal-requirements_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>法律要求</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#wallet" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#wallet_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>皮夹子</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#kids-category" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#kids-category_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>儿童类别</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#extensions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#extensions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>扩展</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#homekit" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#homekit_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>HomeKit</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#healthkit" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#healthkit_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>HealthKit和人体试验</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#testflight" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#testflight_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>TestFlight</font></font></a></li>
+					<li><a href="https://developer.apple.com/app-store/review/guidelines/#apple-pay" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#apple-pay_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果支付</font></font></a></li>
+				</ol>
+			</div>
+		</div>
+		
+		<h2 class="subhead" id="terms-conditions"><font><font>1.条款和条件</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>1.1</font></font></h3>
+				<p><font><font>随着应用程序的App Store的开发人员，您通过的条款的约束</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>程序许可协议</font></font></a><font><font>（PLA），人机接口指南（HIG），你和苹果公司之间的任何其他许可或合同。</font><font>以下规则和例子旨在帮助您获得验收在App Store您的应用程序，而不是从任何其他协议修改或删除的规定。</font></font></p>
+			</li>
+		</ul>
 
-					<p class="thirteen"><font><font>我们认为应用程序比书籍或歌曲，这是我们不策展不同。</font><font>如果你想批评宗教，写一本书。</font><font>如果你想描述性爱，写一本书或一首歌曲，或创建一个医疗应用。</font><font>它可以很复杂，但我们已决定不允许某些种类的在App Store中的内容。</font><font class="">它可以帮助保持我们的一些更广泛的主题记住：</font></font></p>
+		<h2 class="subhead" id="functionality"><font><font>2.功能</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>2.1</font></font></h3>
+				<p><font><font>崩溃会被拒绝的应用程序</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.2</font></font></h3>
+				<p><font><font>显示出错误的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.3</font></font></h3>
+				<p><font><font>不被开发商执行所标榜的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.4</font></font></h3>
+				<p><font><font>包括无证或隐藏的功能与应用程序的描述不一致的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.5</font></font></h3>
+				<p><font><font>使用非公开API的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.6</font></font></h3>
+				<p><font><font>读取或写入其指定的容器区域外数据的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.7</font></font></h3>
+				<p><font><font>该下载的代码以任何方式或形式的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.8</font></font></h3>
+				<p><font><font>应用程序的安装或启动其他可执行的代码会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.9</font></font></h3>
+				<p><font><font>应用是“演示”，“试用”，或者“测试”版本将被拒绝。</font><font>测试版的应用程序可能只能通过TestFlight提交，必须遵循TestFlight指南</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.10</font></font></h3>
+				<p><font><font>iPhone应用程序还必须运行在iPad上无需修改，在iPhone的分辨率，并以2倍iPhone 3GS的分辨率</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.11</font></font></h3>
+				<p><font><font>这重复的应用程序已经在App Store中的应用程序可能会被拒绝，特别是如果其中还有不少，如放屁，打嗝，手电，和Kama Sutra的应用</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.12</font></font></h3>
+				<p><font><font>应用程序是不是非常有用的，独特的，仅仅是捆绑作为应用程序的网站，或不提供任何持久娱乐价值可能会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.13</font></font></h3>
+				<p><font><font>应用程序的主要营销材料或广告会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.14</font></font></h3>
+				<p><font><font>这是为了提供给糖就未清楚标明为假冒功能的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.15</font></font></h3>
+				<p><font><font>应用程序超过100MB的大小不会下载通过蜂窝网络大（这是自动禁止在App Store）</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.16</font></font></h3>
+				<p><font><font>多任务的应用程序只能使用后台服务，为他们的预期目的：网络电话，音频播放，地点，任务完成，本地通知等。</font></font></p>
+			</li>
 
+			<li>
+				<h3><font><font>2.17</font></font></h3>
+				<p><font><font>该浏览网页的应用程序必须使用的iOS的WebKit框架和WebKit的Javascript</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.18</font></font></h3>
+				<p><font><font>鼓励过度消费的酒精或非法物质，或鼓励未成年人饮酒或抽烟的应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.19</font></font></h3>
+				<p><font><font>应用程序，提供不正确诊断或其他不准确设备数据将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.20</font></font></h3>
+				<p><font><font>开发商“垃圾邮件”在App Store有类似的应用程序的多个版本将会从iOS开发者计划中删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.21</font></font></h3>
+				<p><font><font>应用程序，只是一首歌曲或电影应该被提交到iTunes商店。</font><font>这只是一本书应提交的iBooks商店应用程序</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.22</font></font></h3>
+				<p><font><font>应用程序，任意地限制哪些用户可以使用App，例如通过位置或载体，可能会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.23</font></font></h3>
+				<p><font><font>应用程序必须遵循</font></font><a href="https://developer.apple.com/icloud/documentation/data-storage/" onclick="s_objectID=&quot;https://developer.apple.com/icloud/documentation/data-storage/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS数据存储准则</font></font></a><font><font>，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.24</font></font></h3>
+				<p><font><font>所提供的报刊杂志应用程序必须符合附表1，2和3的</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>软件许可协议</font></font></a><font><font>，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.25</font></font></h3>
+				<p><font><font>这显示应用程序不是您自己购买或促销的方式相似或混淆与App Store的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.26</font></font></h3>
+				<p><font><font>应用程序可以显示和建议比你自己的其他应用程序只有在集合是专为特定的批准需要（如健康管理，航空，交通方便等）或客户的特定群体提供显著的附加值，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>2.27</font></font></h3>
+				<p><font><font>如果你的应用程序的核心功能不能与Siri的工作，远程将被拒绝。</font><font>该应用程序可能，但是，提供增强的功能与游戏控制器或其他外围设备的连接</font></font></p>
+			</li>
+		</ul>
 
-					<ul class="square">
-						<li><font><font>我们有很多的孩子下载大量应用程序的。</font><font>家长控制工作的伟大，以保护孩子，但你必须做你的一部分了。</font><font>所以，知道我们正在密切注视出来的孩子。</font></font></li>
-						<li><font><font>我们有超过一百万的应用程序在App Store中。</font><font>如果你的应用程序没有做一些有用的事情，唯一的，或者提供某种形式的持久的娱乐，或者如果你的应用程序是普通令人毛骨悚然，它可能不被接受。</font></font></li>
-						<li><font><font>如果你的应用程序看起来就像是拼凑起来的几天，或者你想获得你的第一个实践应用进店来打动你的朋友，请振作起来拒绝。</font><font>我们有很多谁不希望自己的应用程序的质量由业余小时包围严重的开发商。</font></font></li>
-						<li><font><font>我们将拒绝应用服务，我们认为这是在该行的任何内容或行为。</font><font>哪一行，你问？</font><font>那么，作为最高法院法官曾经说过，“我就知道，当我看到它”。</font><font>我们认为，你也知道，当你穿过它。</font></font></li>
-						<li><font><font>如果你的应用程序被拒绝，我们有一个审查委员会，可以吸引。</font><font>如果您运行的新闻和垃圾我们，它从来没有帮助。</font></font></li>
-						<li><font><font>如果你试图欺骗系统（例如，企图欺骗审查过程中，从用户窃取数据，复制其他开发人员的工作，或操纵收视率）的应用程序会从商店中删除，您将得到从开发商驱逐程序。</font></font></li>
-						<li><font><font>这是一个活的文件，以及新的应用提出了新的问题，可能会导致在任何时间的新规则。</font><font>也许你的应用程序将触发此。</font></font></li>
-					</ul>
-					<p class="thirteen"><font><font>最后，我们爱这个东西过了，孝敬你做什么。</font><font>我们真的尽全力创造最好的平台，在世界上为你表达你的才华和谋生了。</font><font>如果这听起来像我们是控制狂，好吧，也许是因为我们是如此致力于我们的用户，并确保它们与我们的产品品质体验。</font><font>就像几乎所有的你，太。</font></font></p>
-							<h2 class="subhead"><font><font>目录</font></font></h2>
-							<div class="grid2col anchornav divider-bottom padding-bottom-20">
-								<div class="column first">
-									<ol class="toc">
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#terms-conditions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#terms-conditions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>条款和条件</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#functionality" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#functionality_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>功能</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#metadata" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#metadata_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>元数据</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#location" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#location_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>地点</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#push-notifications" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#push-notifications_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>推送通知</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#game-center" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#game-center_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>游戏中心</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#advertising" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#advertising_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>广告</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#trademarks-trade-dress" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#trademarks-trade-dress_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>商标和商业外观</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#media-content" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#media-content_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>媒体内容</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#user-interface" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#user-interface_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>用户界面</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#purchasing-currencies" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#purchasing-currencies_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>采购和货币</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#scraping-aggregation" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#scraping-aggregation_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>刮痧和聚集</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#damage-device" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#damage-device_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>损害或伤害</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#personal-attacks" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#personal-attacks_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>人身攻击</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#violence" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#violence_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>暴力</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#objectionable-content" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#objectionable-content_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>令人反感的内容</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#privacy" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#privacy_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>隐私</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#pornography" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#pornography_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>色情</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#religion-culture-ethnicity" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#religion-culture-ethnicity_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>宗教，文化和种族</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#contests" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#contests_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>竞赛，抽奖，彩票，抽奖，赌博</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#charities-contributions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#charities-contributions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>慈善和贡献</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#legal-requirements" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#legal-requirements_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>法律要求</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#passbook" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#passbook_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>存折</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#kids-category" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#kids-category_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>儿童类别</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#extensions" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#extensions_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>扩展</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#homekit" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#homekit_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>HomeKit</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#healthkit" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#healthkit_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>HealthKit</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#testflight" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#testflight_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>TestFlight</font></font></a></li>
-										<li><a href="https://developer.apple.com/app-store/review/guidelines/#apple-pay" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/guidelines/#apple-pay_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果支付</font></font></a></li>
-									</ol>
-								</div>
-							</div>
-							<h2 class="subhead" id="terms-conditions"><font><font>1.条款和条件</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>1.1</font></font></h3>
-									<p><font><font>随着应用程序的App Store的开发人员，您通过的条款的约束</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>程序许可协议</font></font></a><font><font>（PLA），人机界面指南（HIG），你和苹果公司之间的任何其他许可或合同。</font><font>以下规则和例子旨在帮助您获得认可的在App Store中你的App，而不是从任何其他协议修改或删除的条文。</font></font></p>
-								</li>
-							</ul>
+		<h2 class="subhead" id="metadata"><font><font>3.元数据（名称，描述，评级，排名等）</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>3.1</font></font></h3>
+				<p><font><font>应用程序或元数据提及任何其他移动平台的名字将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.2</font></font></h3>
+				<p><font><font>应用程序与占位符文本将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.3</font></font></h3>
+				<p><font><font>应用服务名称，描述截图，或不相关的应用程序的内容和功能的预览会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.4</font></font></h3>
+				<p><font><font>在iTunes Connect，并作为一个设备上显示应用程序的名称应该是类似的，以免造成混乱</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.5</font></font></h3>
+				<p><font><font>小和大的应用程序图标应该是相似的，从而不会造成混乱</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.6</font></font></h3>
+				<p><font><font>应用程序与应用程序图标，屏幕截图，预览和图像显示，当苹果电视应用程序是在不坚持4+年龄评级的苹果电视主屏幕的最上一层将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.7</font></font></h3>
+				<p><font><font>应用服务种类和类型的选择是不适合于应用程序的内容将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.8</font></font></h3>
+				<p><font><font>开发人员负责分配适当的评级自己的应用程序。</font><font>不适当的收视率可能会改变/苹果删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.9</font></font></h3>
+				<p><font><font>开发人员负责分配适当的关键字为他们的应用程序。</font><font>不适当的关键字可能会更改/苹果删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.10</font></font></h3>
+				<p><font><font>谁试图操纵或欺骗用户评价或图表排名在App Store中有假或付费评论，或任何其他不当方法，开发人员将会从iOS开发者计划中删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.11</font></font></h3>
+				<p><font><font>该建议用户重新启动他们的iOS设备在安装前或启动应用程序可能会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.12</font></font></h3>
+				<p><font><font>应用程序应该包含的所有网址全功能，当你提交以供审核，如支持和隐私权政策网址</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.13</font></font></h3>
+				<p><font><font>有截图，预览和营销文字不清晰识别的附加内容，或者必须单独购买的物品（例如，使用IAP）的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.14</font></font></h3>
+				<p><font><font>应用程序预览才可以使用该应用程序的视频画面捕捉，配音，和文本和设计覆盖，或应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.15</font></font></h3>
+				<p><font><font>与预览应用程序，显示一个真正的人，未经允许，个人信息会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.16</font></font></h3>
+				<p><font><font>应用程序预览可能只包括在所有选定的地区许可用于此目的的音乐</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>3.17</font></font></h3>
+				<p><font><font>应用程序预览和截图，其中包括未授权在预览或截图，通过使用该应用程序播放或流媒体（如音乐，视频，以及相关的封面）的内容会被拒绝</font></font></p>
+			</li>
+		</ul>
 
-							<h2 class="subhead" id="functionality"><font><font>2.功能</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>2.1</font></font></h3>
-									<p><font><font>崩溃将被拒绝的应用程序</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.2</font></font></h3>
-									<p><font><font>表现出错误的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.3</font></font></h3>
-									<p><font><font>不被开发商进行像宣传的那样的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.4</font></font></h3>
-									<p><font><font>包括无证或隐藏的功能与应用的描述不一致的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.5</font></font></h3>
-									<p><font><font>使用非公开API的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.6</font></font></h3>
-									<p><font><font>读取或写入其指定的容器区域外的数据的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.7</font></font></h3>
-									<p><font><font>该下载的代码以任何方式或形式的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.8</font></font></h3>
-									<p><font><font>应用程序的安装或启动其他可执行代码会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.9</font></font></h3>
-									<p><font><font>应用程序是“演示”，“试用”，或者“测试”版本将被拒绝。</font><font>测试版的应用程序只能通过TestFlight提交，并且必须遵循的指导方针TestFlight</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.10</font></font></h3>
-									<p><font><font>iPhone应用程序还必须运行在iPad上无需修改，在iPhone的分辨率，并且在2倍iPhone 3GS分辨率</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.11</font></font></h3>
-									<p><font><font>重复的应用程序已经在App Store中的应用程序可能会被拒绝，特别是如果有很多人，比如放屁，打嗝，手电和Kama Sutra的应用</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.12</font></font></h3>
-									<p><font><font>应用程序是不是非常有用的，独特的，仅仅是作为捆绑的应用程序的网站，或不提供任何持久娱乐价值可能会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.13</font></font></h3>
-									<p><font><font>应用程序的主要营销材料或广告会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.14</font></font></h3>
-									<p><font><font>此举的目的是为恶作剧还是未明确标明为假货等功能的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.15</font></font></h3>
-									<p><font><font>应用程序超过100MB的大小不会下载通过蜂窝网络大（这是自动禁止在App Store）</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.16</font></font></h3>
-									<p><font><font>多任务的应用程序只能使用后台服务，为他们的预期目的：网络电话，音频播放，地点，任务完成，本地通知等。</font></font></p>
-								</li>
+		<h2 class="subhead" id="location"><font><font>4.位置</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>4.1</font></font></h3>
+				<p><font><font>应用程序，收集，传输或使用位置数据之前未通知并获得用户同意将被否决</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>4.2</font></font></h3>
+				<p><font><font>使用基于位置的API，用于自动或自主控制车辆，飞机，或其他装置的应用程序将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>4.3</font></font></h3>
+				<p><font><font>使用基于位置的API，用于紧急服务的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>4.4</font></font></h3>
+				<p><font><font>位置数据只能使用时直接相关的用户或提供的应用程序的功能和服务，以支持核定广告用途</font></font></p>
+			</li>
+		</ul>
 
-								<li>
-									<h3><font><font>2.17</font></font></h3>
-									<p><font><font>该浏览网页的应用程序必须使用的iOS的WebKit框架和WebKit的Javascript</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.18</font></font></h3>
-									<p><font><font>鼓励过度消费的酒精或非法物质，或鼓励未成年人饮酒或抽烟的应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.19</font></font></h3>
-									<p><font><font>应用程序，提供不正确诊断或其他不准确设备数据将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.20</font></font></h3>
-									<p><font><font>开发商“垃圾邮件”在App Store类似的应用程序的多个版本将会从iOS开发者计划中删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.21</font></font></h3>
-									<p><font><font>应用程序，只是一首歌曲或电影应提交的iTunes商店。</font><font>这只是一本书，应提交的iBooks应用程序商店</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.22</font></font></h3>
-									<p><font><font>的应用程序，任意地限制哪些用户可以使用应用程序，例如通过位置或载体，可能会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.23</font></font></h3>
-									<p><font><font>应用程序必须遵循</font></font><a href="https://developer.apple.com/icloud/documentation/data-storage/" onclick="s_objectID=&quot;https://developer.apple.com/icloud/documentation/data-storage/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS数据存储准则</font></font></a><font><font>，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.24</font></font></h3>
-									<p><font><font>所提供的应用程序，报刊亭必须符合附表1，2和3的</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>软件许可协议</font></font></a><font><font>，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.25</font></font></h3>
-									<p><font><font>这显示应用程序而不是您自己的报价，或促销的方式相似或混淆与App Store的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>2.26</font></font></h3>
-									<p><font><font>应用程序可以显示和建议不是您自己的应用程序只有在集合是专为特定的批准需要（如健康管理，航空，交通方便等）或客户的特定群体提供显著的附加值，否则将被拒绝</font></font></p>
-								</li>
-							</ul>
+		<h2 class="subhead" id="push-notifications"><font><font>5.推送通知</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>5.1</font></font></h3>
+				<p><font><font>应用程序提供推送通知，而无需使用苹果推送通知（APN）API将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.2</font></font></h3>
+				<p><font><font>使用该APN服务没有获得苹果推送应用程序ID的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.3</font></font></h3>
+				<p><font><font>该发送推送通知未获得用户同意的要求推送通知到功能应用，以及应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.4</font></font></h3>
+				<p><font><font>即使用发送推送通知敏感的个人或机密信息的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.5</font></font></h3>
+				<p><font><font>使用推送通知的应用程序来发送垃圾邮件，或者进行网络钓鱼或垃圾邮件的目的，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.6</font></font></h3>
+				<p><font><font>应用程序无法使用推送通知来发送广告，促销任何形式的，或直接营销</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.7</font></font></h3>
+				<p><font><font>应用程序不能充电的用户使用推送通知</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.8</font></font></h3>
+				<p><font><font>应用程序，过度使用网络容量的APN服务或造成过多的负担与推送通知的设备或带宽将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>5.9</font></font></h3>
+				<p><font><font>应用程序，传播病毒，文件，计算机代码，或者程序，可能损害或破坏的APN服务的正常运行将被拒绝</font></font></p>
+			</li>
+		</ul>
 
-							<h2 class="subhead" id="metadata"><font><font>3.元数据（名称，描述，评级，排名等）</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>3.1</font></font></h3>
-									<p><font><font>应用程序或元数据提及任何其他移动平台的名字将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.2</font></font></h3>
-									<p><font><font>应用程序与占位符文本将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.3</font></font></h3>
-									<p><font><font>应用服务名称，描述，屏幕截图，或不相关的应用程序的内容和功能的预览将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.4</font></font></h3>
-									<p><font><font>在iTunes Connect，并作为一个设备上显示应用程序的名称应该是类似的，以免引起混乱</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.5</font></font></h3>
-									<p><font><font>小的和大的应用程序图标应该是相似的，从而不会造成混乱</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.6</font></font></h3>
-									<p><font><font>与App的图标，截图，和预览应用程序，不坚持4+年龄评级将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.7</font></font></h3>
-									<p><font><font>应用服务类别和类型的选择是不适合的应用程序的内容将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.8</font></font></h3>
-									<p><font><font>开发商负责分配适当的评级，他们的应用程序。</font><font>不适当的收视率可能会改变/苹果删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.9</font></font></h3>
-									<p><font><font>开发商负责分配适当的关键字为他们的应用程序。</font><font>不恰当的关键字可能会更改/苹果删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.10</font></font></h3>
-									<p><font><font>谁试图操纵或欺骗用户评论或图表排名在App Store中有假或付费评论，或任何其他不当方法，开发人员从iOS开发者计划中删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.11</font></font></h3>
-									<p><font><font>该建议用户重新启动他们的iOS设备在安装前或启动应用程序可能会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.12</font></font></h3>
-									<p><font><font>应用程序应该包含的所有网址全功能，当你提交审查，如支持和隐私权政策网址</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.13</font></font></h3>
-									<p><font><font>有截图，预览和营销文字不清晰识别补充内容或需单独购买的物品（例如，使用IAP）的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.14</font></font></h3>
-									<p><font><font>应用程序预览只能使用该应用程序的视频画面捕捉，配音，和文本和设计覆盖，或应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.15</font></font></h3>
-									<p><font><font>与预览应用程序，显示一个真实的人未经允许的个人信息将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.16</font></font></h3>
-									<p><font><font>应用程序预览可能只包括在所有选定的地区许可用于这一目的的音乐</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>3.17</font></font></h3>
-									<p><font><font>应用程序的预览，包括通过应用程序播放或流媒体内容（如iTunes的播放列表，YouTube的视频流）未获准用于预览会被拒绝</font></font></p>
-								</li>
-							</ul>
+		<h2 class="subhead" id="game-center"><font><font>6.游戏中心</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>6.1</font></font></h3>
+				<p><font><font>这显示任何玩家ID的应用程序的最终用户或任何第三方都将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.2</font></font></h3>
+				<p><font><font>使用播放器的ID比所批准的游戏中心条款以外的任何使用的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.3</font></font></h3>
+				<p><font><font>试图反向查找，跟踪，涉及开发商，联想，矿山，收获，或以其他方式攻击玩家ID，别名，或通过游戏中心获得的其他信息将被从iOS开发者计划中删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.4</font></font></h3>
+				<p><font><font>游戏中心的信息，如排行榜分数，仅可在应用程序中使用批准用于游戏中心使用</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.5</font></font></h3>
+				<p><font><font>使用游戏中心的服务应用程序来发送垃圾邮件，或者进行网络钓鱼或垃圾邮件的目的，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.6</font></font></h3>
+				<p><font><font>应用程序，过度使用网络容量的游戏中心或带宽将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>6.7</font></font></h3>
+				<p><font><font>应用程序，传播病毒，文件，计算机代码或程序，可能损害或破坏游戏中心服务的正常运行将被拒绝</font></font></p>
+			</li>
+		</ul>
 
-							<h2 class="subhead" id="location"><font><font>4.位置</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>4.1</font></font></h3>
-									<p><font><font>应用程序，收集，传输，或使用位置数据之前没有通知，并获得用户的同意将被否决</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>4.2</font></font></h3>
-									<p><font><font>使用基于位置的API用于自动或自主控制车辆，飞机，或其他设备的应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>4.3</font></font></h3>
-									<p><font><font>使用基于位置的API用于紧急服务的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>4.4</font></font></h3>
-									<p><font><font>位置数据只能用于当直接相关的用户或提供的应用程序的功能和服务，以支持认可的广告的用途</font></font></p>
-								</li>
-							</ul>
+		<a id="iads"></a>
+		<a id="iad"></a>
+		<h2 class="subhead" id="advertising"><font><font>7.广告</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>7.1</font></font></h3>
+				<p><font><font>应用程序，人为地增加展示次数和点击率的广告会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>7.2</font></font></h3>
+				<p><font><font>包含空iAd的横幅应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>7.3</font></font></h3>
+				<p><font><font>这主要是针对广告的展示设计的应用程序将会被拒绝</font></font></p>
+			</li>
 
-							<h2 class="subhead" id="push-notifications"><font><font>5.推送通知</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>5.1</font></font></h3>
-									<p><font><font>应用程序，提供推送通知，而无需使用苹果推送通知（APN）API将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.2</font></font></h3>
-									<p><font><font>使用该APN服务没有获得苹果推送应用程序ID的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.3</font></font></h3>
-									<p><font><font>即发送推送通知未取得用户同意的要求推送通知到功能应用，以及应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.4</font></font></h3>
-									<p><font><font>即使用发送推送通知敏感的个人或机密信息的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.5</font></font></h3>
-									<p><font><font>使用推送通知的应用程序来发送未经请求的消息，或钓鱼或垃圾邮件的目的，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.6</font></font></h3>
-									<p><font><font>应用程序无法使用推送通知来发送广告，促销任何形式的，或直接营销</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.7</font></font></h3>
-									<p><font><font>应用程序可以不收取用户使用推送通知</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.8</font></font></h3>
-									<p><font><font>应用程序，过度使用网络容量的APN服务或过度的负担推送通知的设备或带宽将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>5.9</font></font></h3>
-									<p><font><font>的应用程序，传播病毒，文件，计算机代码或程序可能损害或破坏的APN服务的正常操作将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="game-center"><font><font>6.游戏中心</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>6.1</font></font></h3>
-									<p><font><font>这显示任何玩家ID的应用程序到最终用户或任何第三方都将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.2</font></font></h3>
-									<p><font><font>使用播放器的ID比批准的游戏中心等条款的任何使用应用程序将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.3</font></font></h3>
-									<p><font><font>试图反向查找，跟踪与开发，联营，矿山，收获，或以其他方式攻击玩家的ID，别名，或通过游戏中心获得的其他信息将被从iOS开发者计划中删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.4</font></font></h3>
-									<p><font><font>游戏中心的信息，如排行榜成绩，仅可在应用程序中使用批准用于与游戏中心使用</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.5</font></font></h3>
-									<p><font><font>使用游戏中心的服务应用程序来发送未经请求的消息，或钓鱼或垃圾邮件的目的，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.6</font></font></h3>
-									<p><font><font>应用程序，过度使用网络容量的游戏中心或带宽将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>6.7</font></font></h3>
-									<p><font><font>应用程序，传播病毒，文件，计算机代码或程序，可能会损害或破坏游戏中心服务的正常运行将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<a id="iads"></a>
-							<a id="iad"></a>
-							<h2 class="subhead" id="advertising"><font><font>7.广告</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>7.1</font></font></h3>
-									<p><font><font>应用程序，人为地增加展示次数和点击率的广告会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>7.2</font></font></h3>
-									<p><font><font>包含空iAd的横幅应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>7.3</font></font></h3>
-									<p><font><font>这主要是针对广告的显示设计的应用程序将会被拒绝</font></font></p>
-								</li>
-
-							</ul>
-
-
-
-							<h2 class="subhead" id="trademarks-trade-dress"><font><font>8.内容和知识产权</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>8.1</font></font></h3>
-									<p><font><font>应用程序必须遵守所有条款和条件，在解释</font></font><a href="http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html" onclick="s_objectID=&quot;http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>准则使用苹果商标和版权</font></font></a><font><font>和</font></font><a href="http://www.apple.com/legal/trademark/appletmlist.html" onclick="s_objectID=&quot;http://www.apple.com/legal/trademark/appletmlist.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果商标列表</font></font></a></p>
-								</li>
-								<li>
-									<h3><font><font>8.2</font></font></h3>
-									<p><font><font>这暗示或推断，苹果是一个源或应用程序的供应商或苹果认可任何特定表示有关质量或功能的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>8.3</font></font></h3>
-									<p><font><font>出现混淆性相似到现有的苹果产品，接口或广告主题的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>8.4</font></font></h3>
-									<p><font><font>这拼错苹果产品的名称在他们的应用程序名称的应用程序（例如，GPS的iPhone，iTunz）将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>8.5</font></font></h3>
-									<p><font><font>应用程序可能无法使用受保护的第三方材料，如商标，版权，专利或违反使用第三方的条款。</font><font>授权使用此类材料必须根据要求提供</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="media-content"><font><font>9.媒体内容</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>9.1</font></font></h3>
-									<p><font><font>不使用MediaPlayer的框架来访问音乐库中的媒体应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>9.2</font></font></h3>
-									<p><font><font>模仿任何iPod或iTunes界面的应用程序的用户界面将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>9.3</font></font></h3>
-									<p><font><font>在一个蜂窝网络的音频流的内容可能不使用超过5MB在5分钟内</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>9.4</font></font></h3>
-									<p><font><font>视频通过蜂窝网络的流媒体内容超过10分钟必须使用HTTP实时流和包括基准64 kbps的HTTP实时流</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="user-interface"><font><font class="">10.用户界面</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>10.1</font></font></h3>
-									<p><font><font>应用程序必须遵守所有条款和条件，在解释</font></font><a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" onclick="s_objectID=&quot;https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果iOS人机界面指南</font></font></a></p>
-								</li>
-								<li>
-									<h3><font><font>10.2</font></font></h3>
-									<p><font><font>应用程序，类似于捆绑的应用程序在iPhone上，包括在App Store，iTunes商店和iBooks商店，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>10.3</font></font></h3>
-									<p><font><font>的应用程序，不使用提供系统的项目，如按钮和图标，正确地并且如所描述的</font></font><a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" onclick="s_objectID=&quot;https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果iOS人机界面指南</font></font></a><font><font>可能会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>10.4</font></font></h3>
-									<p><font><font class="">创造替代桌面/主屏幕环境或者模拟多应用程序部件体验的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>10.5</font></font></h3>
-									<p><font><font class="">即改变标准开关的功能，如音量增/减和环应用/静音开关，会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>10.6</font></font></h3>
-									<p><font><font class="">苹果和我们的客户放置一个高价值的简单，精致，创新，以及通过接口的想法。</font><font class="">他们需要更多的工作，但都是值得的。</font><font>苹果公司设置了很高的门槛。</font><font>如果您的用户界面是复杂或小于非常好，它可能会被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="purchasing-currencies"><font><font>11.采购与货币</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>11.1</font></font></h3>
-									<p><font><font>该解锁或启用其他功能或功能与机制比App Store中的其他应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.2</font></font></h3>
-									<p><font><font class="">利用系统比在应用程序内购买API（IAP）等，以在应用程序内购买内容，功能或服务的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.3</font></font></h3>
-									<p><font><font>使用IAP购买的应用程序之外使用实物商品或商品和服务的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.4</font></font></h3>
-									<p><font><font>使用IAP的应用程序购买积分或其他货币必须消耗在App内的学分</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.5</font></font></h3>
-									<p><font><font>使用IAP的应用程序购买积分或过期将被拒绝其他货币</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.6</font></font></h3>
-									<p><font><font>使用IAP必须持续至少7天，提供给用户从他们所有的iOS设备上的内容订阅</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.7</font></font></h3>
-									<p><font><font>使用IAP购买物品的应用程序必须将正确的Purchasability类型</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.8</font></font></h3>
-									<p><font><font>使用IAP购买获得通过的iOS提供的内置功能，如摄像头或陀螺仪应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.9</font></font></h3>
-									<p><font><font>除了具体的批准内容后，在有限的时间到期包含内容或服务的应用程序将被拒绝，（如电影，电视节目，音乐，书籍）</font></font></p>
-								</li>
-
-								<li>
-									<h3><font><font>11.10</font></font></h3>
-									<p><font><font>保险的应用程序必须是免费的，法律遵守的地区分布，而不能使用IAP</font></font></p>
-								</li>
-
-								<li>
-									<h3><font><font>11.11</font></font></h3>
-									<p><font><font>一般来说，越贵的应用程序，将更加彻底，我们会检讨</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.12</font></font></h3>
-									<p><font><font>应用程序提供订阅必须这样做使用IAP，苹果将共享相同的70/30收入分配与开发商进行这些采购，作为所述</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_3&quot;;return this.s_oc?this.s_oc(e):true"><font><font>软件许可协议</font></font></a></p>
-								</li>
-								<li>
-									<h3><font><font>11.13</font></font></h3>
-									<p><font><font>在App使用链接为购买或订阅外部机制的应用程序，如“购买”按钮，即进入一个网站购买数字图书，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.14</font></font></h3>
-									<p><font><font>应用程序可以读取或播放批准的内容（特别是杂志，报纸，图书，音像，音乐，视频和云存储），该认购或App之外购买的，只要有在App没有按钮或外部链接来购买经批准的内容。</font><font>苹果将​​只能收到营收为内容的应用程序内购买的一部分</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.15</font></font></h3>
-									<p><font><font class="">应用程序可能只使用自动更新的订阅期刊（报纸，杂志），商业应用（企业生产力，专业创作，云存储）和媒体应用（视频，音频，语音），或在App将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.16</font></font></h3>
-									<p><font><font>结合具体的核准物理产品（例如一个玩具）组合使用时，应用可能使附加批准的特性或功能，只要附加的特性和功能或者是完全依赖于这样的硬件（例如一个应用程序，用于控制一个望远镜），或者也可通过应用程序，而不物理产品，如由奖励的成果或通过使用IAP的方式</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>11.17</font></font></h3>
-									<p><font><font class="">应用程序可以方便的通过虚拟货币的传播提供了他们这样做符合所有州和联邦法律的领地中，应用程序的功能</font></font></p>
-								</li>
-
-
-							</ul>
-
-							<h2 class="subhead" id="scraping-aggregation"><font><font>12.刮痧和聚集</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>12.1</font></font></h3>
-									<p><font><font>应用程序，从苹果的网站刮的任何信息（例如，从</font></font><a href="http://apple.com/" onclick="s_objectID=&quot;http://apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>apple.com</font></font></a><font><font>使用内容从苹果的网站和服务，iTunes商店，应用程序商店，iTunes Connect中，苹果开发者计划等）或创建的排名将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>12.2</font></font></h3>
-									<p><font><font>应用可能会批准苹果的RSS订阅，如iTunes商店RSS提要</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>12.3</font></font></h3>
-									<p><font><font>应用程序是简单的网页剪报，内容聚合，或链接的集合，可能会被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="damage-device"><font><font>13.损害或伤害</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>13.1</font></font></h3>
-									<p><font><font>应用程序，鼓励用户使用苹果设备的方式，可能会损坏设备将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>13.2</font></font></h3>
-									<p><font><font>应用程序可以迅速排水设备的电池或产生过多的热量会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>13.3</font></font></h3>
-									<p><font><font>应用程序的使用可能会导致身体上的伤害可能会被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="personal-attacks"><font><font>14.人身攻击</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>14.1</font></font></h3>
-									<p><font><font>任何应用程序，是诽谤，攻击，卑鄙，或有可能把伤害的方式有针对性的个人或团体将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>14.2</font></font></h3>
-									<p><font><font>专业的政治讽刺和幽默大师免除在进攻还是卑鄙的评论禁令</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>14.3</font></font></h3>
-									<p><font><font>中显示用户生成的内容的应用程序必须包含一个方法，用于过滤不良的资料，一机制，供用户标志冒犯性内容，并阻止滥用用户从服务的能力</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="violence"><font><font>15.暴力</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>15.1</font></font></h3>
-									<p><font><font>应用程序描绘的人或动物逼真的图像被杀死或致残，射击，刺伤，拷打或受伤的会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>15.2</font></font></h3>
-									<p><font><font>描绘暴力或虐待儿童的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>15.3</font></font></h3>
-									<p><font><font>游戏的范围内“敌人”不能只针对特定种族，文化，真正的政府或公司，或任何其他真正的实体</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>15.4</font></font></h3>
-									<p><font><font>涉及武器的真实素描以这样的方式鼓励非法或鲁莽使用这种武器的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>15.5</font></font></h3>
-									<p><font><font>企业应用套件，其中包括俄罗斯轮盘赌的游戏将被拒绝</font></font></p>
-								</li>
-								</ul>
-
-							<h2 class="subhead" id="objectionable-content"><font><font>16.不良内容</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>16.1</font></font></h3>
-									<p><font><font>应用程序，目前的过度反感的或原油内容会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>16.2</font></font></h3>
-									<p><font><font>应用程序的主要目的是扰乱或厌恶的用户将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="privacy"><font><font>17.隐私</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>17.1</font></font></h3>
-									<p><font><font>未取得用户的事先许可和向用户提供访问信息有关的数据如何以及在何处将被使用的应用程序不能传送有关用户的数据</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>17.2</font></font></h3>
-									<p><font><font>要求用户共享个人信息的应用程序，如电子邮件地址和出生日期，以功能将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>17.3</font></font></h3>
-									<p><font><font>应用程序可以要求出生日期（或使用其他年龄门控机制）仅适用于适用儿童的隐私法规遵从的目的，但必须包括一些有用的功能或娱乐价值，无论用户的年龄</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>17.4</font></font></h3>
-									<p><font><font>应用程序收集，传输，或者分享个人信息的能力（如姓名，地址，电子邮件，位置，照片，视频，图画，能力聊天，其他的个人数据，或结合使用上述任何永久标识符）从一个小必须遵守适用的儿童的隐私法规，而且必须包括隐私政策</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>17.5</font></font></h3>
-									<p><font><font>应用包含账户注册或访问用户的现有帐户必须包括隐私政策，否则将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="pornography"><font><font>18.色情</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>18.1</font></font></h3>
-									<p><font><font class="">含有色情内容的材料，通过韦氏词典定义为“明确说明或性器官或活动展示旨在激发情欲，而不是美学或情绪感受”的应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>18.2</font></font></h3>
-									<p><font><font>包含用户的应用程序生成的内容是经常色情（如“聊天轮盘”的应用程序）将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="religion-culture-ethnicity"><font><font>19.宗教，文化和种族</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>19.1</font></font></h3>
-									<p><font><font>包含关于宗教，文化或种族群体是诽谤，攻击，卑鄙或可能暴露目标群体伤害或暴力将被拒绝引用或评论的应用程序</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>19.2</font></font></h3>
-									<p><font><font>应用程序可以包含或引用宗教文本提供的报价或翻译是准确的，没有误导​​。</font><font>解说应该是教育和信息，而不是炎症</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="contests"><font><font>20.竞赛，抽奖，彩票，抽奖，赌博</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>20.1</font></font></h3>
-									<p><font><font>抽奖和竞赛必须由应用程序的开发者/公司赞助</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>20.2</font></font></h3>
-									<p><font><font>用于抽奖和比赛正式规则必须提交在App并明确表示，苹果是不是赞助商或参与活动的任何方式</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>20.3</font></font></h3>
-									<p><font><font>它必须是法律允许的为开发者运行一个应用程序的彩票，而彩票应用程序必须具备以下所有特性：考虑，机会和奖金</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>20.4</font></font></h3>
-									<p><font><font>应用程序，允许用户直接购买在App一张抽奖券将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>20.5</font></font></h3>
-									<p><font><font>应用程序，提供真正的钱游戏（例如体育博彩，扑克，赌博游戏，赛马）或彩票必须具备必要的授权和权限在该应用程序时，必须限制在这些地点的位置，而且必须是免费的应用程序店</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>20.6</font></font></h3>
-									<p><font><font>使用IAP购买信用或货币与真实货币的游戏一起使用的应用程序将会被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="charities-contributions"><font><font>21.慈善和贡献</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>21.1</font></font></h3>
-									<p><font><font>企业应用套件，其中包括捐献认可的慈善机构必须是自由的能力</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>21.2</font></font></h3>
-									<p><font><font>慈善捐款的收集必须通过一个网站在Safari或短信来完成</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="legal-requirements"><font><font>22.法律规定</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>22.1</font></font></h3>
-									<p><font><font>应用程序必须遵守在任何位置的所有法律要求，他们都提供给用户。</font><font>这是开发商的责任，了解并遵守当地法律</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.2</font></font></h3>
-									<p><font><font class="">包含虚假，欺诈或误导性陈述或使用的名称或图标类似于其他应用程序的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.3</font></font></h3>
-									<p><font><font>应用程序，征集，推广，或鼓励犯罪或明显鲁莽行为将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.4</font></font></h3>
-									<p><font><font>应用程序，使非法文件共享将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.5</font></font></h3>
-									<p><font><font>这是设计用作非法赌博辅助工具，包括算牌的应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.6</font></font></h3>
-									<p><font><font>应用程序，允许匿名或恶作剧电话或SMS / MMS消息将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.7</font></font></h3>
-									<p><font><font class="">谁创建的应用程序开发人员暗中试图发现用户密码或其他私人用户数据会从iOS开发者计划中删除</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.8</font></font></h3>
-									<p><font><font class="">含有不是由执法机构公布DUI检查站，或鼓励，使酒后驾车的应用程序，将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.9</font></font></h3>
-									<p><font><font class="">该计算药用剂量的应用程序必须提交这些药物的制造商或认可的机构，如医院，保险公司和大学</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>22.10</font></font></h3>
-									<p><font><font>使用iTunes音乐预览以未经授权的方式的应用程序将被拒绝</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="passbook"><font><font>23.存折</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>23.1</font></font></h3>
-									<p><font><font>存折通行证可以用来拨打或接收付款，传输提供，或提供的标识（如电影票，机票，优惠券和奖励提供）。</font><font>其他用途可能会导致在App的排斥，以及撤销存折凭证</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>23.2</font></font></h3>
-									<p><font><font>通票必须包括合格或App的发行人的有效联系信息将被拒绝和存折凭据可能被撤销</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>23.3</font></font></h3>
-									<p><font><font>通票必须由将要发行自己的名称，商标或品牌或App下传的实体签署将被拒绝，存折凭据可能被撤销</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead" id="kids-category"><font><font>24.儿童类别</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>24.1</font></font></h3>
-									<p><font><font>在儿童类的应用程序必须包括隐私政策，并必须遵守适用的儿童的隐私法规</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>24.2</font></font></h3>
-									<p><font><font>在儿童类的应用程序可能不包括行为广告（如广告不得担任基础上，应用程序内的用户的活动广告），并在App提出任何上下文广告必须适合儿童</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>24.3</font></font></h3>
-									<p><font><font>在儿童类别的应用程序，必须获得父母许可或者允许用户来链接应用程序的列或从事商业使用前亲栅极</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>24.4</font></font></h3>
-									<p><font><font>在儿童类的应用程序必须专门为孩子们5岁及以下年龄6-8或9-11岁进行</font></font></p>
-								</li>
-							</ul>
-
-
-							<h2 class="subhead" id="extensions"><font><font>25.扩展</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>25.1</font></font></h3>
-									<p><font><font>应用程序托管扩展必须符合</font></font><a href="https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html" onclick="s_objectID=&quot;https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/Extensibility_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序扩展编程指南</font></font></a></p>
-								</li>
-								<li>
-									<h3><font><font>25.2</font></font></h3>
-									<p><font><font>应用程序托管扩展必须提供一些功能（帮助屏幕，其他设置），否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.3</font></font></h3>
-									<p><font><font>应用程序托管扩展，包括市场营销，广告或应用内购买在他们的扩展视图将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.4</font></font></h3>
-									<p><font><font>键盘的扩展必须进展到下一个键盘提供了一种方法</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.5</font></font></h3>
-									<p><font><font>键盘的扩展必须保持工作没有网络接入，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.6</font></font></h3>
-									<p><font><font>键盘的扩展必须提供尽可能的描述中数和十进制键盘类型的</font></font><a href="https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html" onclick="s_objectID=&quot;https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/Extensibility_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序扩展编程指南</font></font></a><font><font>，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.7</font></font></h3>
-									<p><font><font>应用程序提供了键盘的扩展必须有工具的主要类别和隐私权政策，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>25.8</font></font></h3>
-									<p><font><font>应用服务提供键盘扩展可以仅收集用户活动以增强iOS设备上的键盘延长的功能，或者它们可能会被拒绝</font></font></p>
-								</li>
-							</ul>
+		</ul>
 
 
 
+		<h2 class="subhead" id="trademarks-trade-dress"><font><font>8.内容与知识​​产权</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>8.1</font></font></h3>
+				<p><font><font>应用程序必须遵守所有条款和条件，在解释</font></font><a href="http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html" onclick="s_objectID=&quot;http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>准则使用苹果商标和版权</font></font></a><font><font>和</font></font><a href="http://www.apple.com/legal/trademark/appletmlist.html" onclick="s_objectID=&quot;http://www.apple.com/legal/trademark/appletmlist.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果商标列表</font></font></a></p>
+			</li>
+			<li>
+				<h3><font><font>8.2</font></font></h3>
+				<p><font><font>这暗示或推断，苹果是一个源或应用程序的供应商或苹果认可任何特定表示有关质量或功能的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>8.3</font></font></h3>
+				<p><font><font>出现混淆性相似现有的苹果产品，接口或广告主题的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>8.4</font></font></h3>
+				<p><font><font>这拼错苹果产品的名称在他们的应用程序名称应用程序（例如，GPS的iPhone，iTunz）将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>8.5</font></font></h3>
+				<p><font><font>应用程序可能无法使用受保护的第三方材料，如商标，版权，专利或违反使用第三方的条款。</font><font>授权使用此类材料必须根据要求提供</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>8.6</font></font></h3>
+				<p><font><font>应用程序，包括从这些来源下载来自第三方（如YouTube的，SoundCloud，Vimeo的等），音乐或视频内容未经明确授权的能力将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="media-content"><font><font>9.媒体内容</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>9.1</font></font></h3>
+				<p><font><font>不使用的MediaPlayer的框架来访问音乐库中的媒体应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>9.2</font></font></h3>
+				<p><font><font>模仿任何iPod或iTunes界面应用程序的用户界面将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>9.3</font></font></h3>
+				<p><font><font>在蜂窝网络上的音频流的内容可能不使用超过5MB在5分钟内</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>9.4</font></font></h3>
+				<p><font><font>视频通过蜂窝网络的流媒体内容超过10分钟必须使用HTTP实时流和包括基线192 kbps或更低的HTTP实时流</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="user-interface"><font><font>10.用户界面</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>10.1</font></font></h3>
+				<p><font><font>应用程序必须遵守所有条款和适用的苹果人机界面指南解释的条件：</font></font></p>
+				<ul class="padding-left-80 padding-bottom-10">
+					<li><a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" onclick="s_objectID=&quot;https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS的人机界面指南</font></font></a></li>
+					<li><a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/" onclick="s_objectID=&quot;https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>OS X人机接口指南</font></font></a></li>
+					<li><a href="https://developer.apple.com/tvos/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/tvos/human-interface-guidelines/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果电视人机​​界面指南</font></font></a></li>
+					<li><a href="https://developer.apple.com/watch/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/watch/human-interface-guidelines/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Apple关注人机界面指南</font></font></a></li>
+				</ul>
+			</li>
+			<li>
+				<h3><font><font>10.2</font></font></h3>
+				<p><font><font>应用程序，类似于企业应用套件捆绑在iOS或观看OS设备，包括应用程序商店，iTunes商店和iBooks商店，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>10.3</font></font></h3>
+				<p><font><font>的应用程序，不使用提供系统的项目，如按钮和图标，正确并作为在所述的</font></font><a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" onclick="s_objectID=&quot;https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果iOS人机界面指南</font></font></a><font><font>可能会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>10.4</font></font></h3>
+				<p><font><font>创造替代桌面/主屏幕环境或者模拟多应用程序插件的经验应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>10.5</font></font></h3>
+				<p><font><font>这改变标准交换机的功能，例如音量增/减和环应用/静音开关，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>10.6</font></font></h3>
+				<p><font><font>苹果和我们的客户放置一个高价值的简单，精致，创新，以及通过接口的想法。</font><font>他们采取更多的工作，但都是值得的。</font><font>苹果公司设置了很高的门槛。</font><font>如果您的用户接口是复杂或小于非常好，它可能会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>10.7</font></font></h3>
+				<p><font><font>关注应用，其主要功能是在告诉时将被拒绝</font></font></p>
+			</li>								
+		</ul>
+
+		<h2 class="subhead" id="purchasing-currencies"><font><font>11.采购与货币</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>11.1</font></font></h3>
+				<p><font><font>该解锁或启用附加的特性或功能与机制比App Store中的其他应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.2</font></font></h3>
+				<p><font><font>利用系统比在应用程序内购买API（IAP）以外，以在应用程序内购买内容，功能或服务的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.3</font></font></h3>
+				<p><font><font>使用IAP购买应用程序之外使用的实物商品或商品和服务的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.4</font></font></h3>
+				<p><font><font>使用IAP应用程序购买积分或其他货币必须消耗在应用程序内的学分</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.5</font></font></h3>
+				<p><font><font>使用IAP应用程序购买积分或过期将被拒绝其他货币</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.6</font></font></h3>
+				<p><font><font>使用IAP必须持续至少7天，并提供给用户从他们的所有IOS设备内容订阅</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.7</font></font></h3>
+				<p><font><font>使用IAP购买物品的应用程序必须将正确的Purchasability类型</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.8</font></font></h3>
+				<p><font><font>使用IAP购买获得通过的iOS，watchOS和tvOS提供的内置功能，如相机或陀螺仪，或苹果品牌的外围设备，如苹果铅笔或Apple键盘的应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.9</font></font></h3>
+				<p><font><font>除了特定核准内容之后的有限时间到期包含内容或服务的应用程序将被拒绝，（如电影，电视节目，音乐，书籍）</font></font></p>
+			</li>
+
+			<li>
+				<h3><font><font>11.10</font></font></h3>
+				<p><font><font>保险应用必须是自由的，在法律规在各区域分布，并且不能使用IAP</font></font></p>
+			</li>
+
+			<li>
+				<h3><font><font>11.11</font></font></h3>
+				<p><font><font>在一般情况下，更昂贵的应用中，更彻底地我们将回顾它</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.12</font></font></h3>
+				<p><font><font>应用提供订阅必须这样做使用IAP，苹果将共享相同的70/30收入分配与开发商进行这些采购，作为所述</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_3&quot;;return this.s_oc?this.s_oc(e):true"><font><font>软件许可协议</font></font></a></p>
+			</li>
+			<li>
+				<h3><font><font>11.13</font></font></h3>
+				<p><font><font>在应用程序中使用链接为购买或订阅外部机制的应用程序，如“购买”按钮，即进入一个网站购买数字图书，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.14</font></font></h3>
+				<p><font><font>应用程序可以读取或播放批准的内容（特别是杂志，报纸，图书，音像，音乐，视频和云存储），其认购或App之外购买的，只要是在App没有按钮或外部链接来购买经批准的内容。</font><font>苹果只会收到营收为内容的应用程序内购买的一部分</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.15</font></font></h3>
+				<p><font><font>应用程序可能只使用自动更新的订阅期刊（报纸，杂志），商业应用（企业，生产能力，专业创作，云存储）和媒体应用（视频，音频，语音），或应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.16</font></font></h3>
+				<p><font><font>结合具体的核准物理产品（例如一个玩具）组合使用时的应用程序可以使得能够附加批准的特性或功能，只要附加的特征和功能或者是完全依赖于这样的硬件（例如一个应用程序，用于控制一个望远镜），或者也可通过应用程序，而不物理产品，诸如通过奖励的成果或通过使用IAP的方式</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>11.17</font></font></h3>
+				<p><font><font>应用程序可以方便的认可虚拟货币的传播，只要他们这样做符合所有州和联邦法律的领土，其中应用程序的功能</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="scraping-aggregation"><font><font>12.刮痧和聚集</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>12.1</font></font></h3>
+				<p><font><font>应用从苹果网站刮的任何信息（例如，从</font></font><a href="http://apple.com/" onclick="s_objectID=&quot;http://apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>apple.com</font></font></a><font><font>使用内容从苹果公司的网站和服务，iTunes商店，应用程序商店，iTunes Connect中，苹果开发者计划等）或创建的排名将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>12.2</font></font></h3>
+				<p><font><font>应用程序可能批准苹果的RSS源，例如iTunes Store的RSS提要</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>12.3</font></font></h3>
+				<p><font><font>应用程序是简单的网页剪报，内容聚合，或链接的集合，可能会被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="damage-device"><font><font>13.损害或伤害</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>13.1</font></font></h3>
+				<p><font><font>应用程序，鼓励用户使用苹果设备的方式，可能会损坏设备将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>13.2</font></font></h3>
+				<p><font><font>应用程序，迅速排出设备的电池或产生过多的热量会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>13.3</font></font></h3>
+				<p><font><font>应用程序的使用可能会导致身体上的伤害可能会被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="personal-attacks"><font><font>14.人身攻击</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>14.1</font></font></h3>
+				<p><font><font>任何应用程序，是诽谤，攻击，卑鄙，或有可能把伤害的方式有针对性的个人或团体将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>14.2</font></font></h3>
+				<p><font><font>专业政治讽刺作家和幽默家免除在进攻还是卑鄙的评论禁令</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>14.3</font></font></h3>
+				<p><font><font>中显示用户生成的内容的应用程序必须包含一个过滤方法，不良的资料，一机制为用户标志冒犯性内容，并阻止滥用用户从服务的能力</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="violence"><font><font>15.暴力</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>15.1</font></font></h3>
+				<p><font><font>应用描绘的人或动物逼真的图像被杀死或致残，射击，刺伤，拷打或受伤的会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>15.2</font></font></h3>
+				<p><font><font>描绘暴力或虐待儿童的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>15.3</font></font></h3>
+				<p><font><font>游戏的环境中“敌人”不能只针对特定的种族，文化，真正的政府或公司，或任何其他真实的实体</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>15.4</font></font></h3>
+				<p><font><font>涉及武器的真实素描以这样的方式，以鼓励非法或鲁莽使用这种武器的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>15.5</font></font></h3>
+				<p><font><font>企业应用套件，其中包括俄罗斯轮盘赌的游戏将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="objectionable-content"><font><font>16.令人反感的内容</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>16.1</font></font></h3>
+				<p><font><font>应用程序，目前的过度反感的或原油内容会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>16.2</font></font></h3>
+				<p><font><font>应用程序的主要目的是扰乱或厌恶的用户将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="privacy"><font><font>17.隐私</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>17.1</font></font></h3>
+				<p><font><font>未取得用户的事先许可和为用户提供信息获取有关数据如何以及在何处将被使用的应用程序不能传送有关用户的数据</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>17.2</font></font></h3>
+				<p><font><font>要求用户共享个人信息的应用程序，如电子邮件地址和出生日期，以功能将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>17.3</font></font></h3>
+				<p><font><font>应用程序可能会要求出生日期（或使用其他年龄门控机制）仅适用于适用的儿童的隐私权法规的规定而设，但必须包括一些有用的功能或娱乐价值，而不管用户的年龄</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>17.4</font></font></h3>
+				<p><font><font>应用程序，收集，传输，或者分享个人信息的能力（如姓名，地址，电子邮件，位置，照片，视频，图画，能力聊天，其他个人资料，或结合使用上述任何永久标识符）从一个小必须符合适用儿童的隐私法规，而且必须包括隐私政策</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>17.5</font></font></h3>
+				<p><font><font>应用包含账户注册或访问用户的现有帐户必须包括隐私政策，否则将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="pornography"><font><font>18.色情</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>18.1</font></font></h3>
+				<p><font><font>含有色情材料，通过韦氏词典定义为“明确的说明或性器官或活动的显示器旨在激发色情，而非美学或情绪感受”的应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>18.2</font></font></h3>
+				<p><font><font>包含用户的应用程序生成的内容，是常常色情（如“聊天轮盘”的应用程序）将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="religion-culture-ethnicity"><font><font>19.宗教，文化和种族</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>19.1</font></font></h3>
+				<p><font><font>包含关于宗教，文化或种族群体是诽谤，攻击，卑鄙或容易暴露目标群体伤害或暴力行为将被拒绝引用或评论的应用程序</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>19.2</font></font></h3>
+				<p><font><font>应用程序可以包含或引用宗教文本提供的报价或翻译是正确无误。</font><font>解说应该是教育或信息，而不是炎症</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="contests"><font><font>20.竞赛，抽奖，抽奖，抽奖，赌博</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>20.1</font></font></h3>
+				<p><font><font>抽奖和竞赛必须由应用程序的开发者/公司赞助</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>20.2</font></font></h3>
+				<p><font><font>对于抽奖和比赛正式规则必须提交应用程序，并明确指出苹果是不是赞助商或参与该活动以任何方式</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>20.3</font></font></h3>
+				<p><font><font>它必须是法律允许的显影剂来运行一个彩票应用，和一个彩票应用必须具有所有的以下特点：考虑，机会，一个奖</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>20.4</font></font></h3>
+				<p><font><font>应用程序，允许用户直接购买在App一张抽奖券将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>20.5</font></font></h3>
+				<p><font><font>应用程序，提供真钱游戏（例如体育博彩，扑克，赌博游戏，赛马）或彩票必须有必要的授权和许可在该应用程序时，必须限制在这些地点的位置，而且必须是免费的应用程序存储</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>20.6</font></font></h3>
+				<p><font><font>使用IAP购买信用或货币与真实货币的游戏一起使用的应用程序将会被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="charities-contributions"><font><font>21.慈善和捐款</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>21.1</font></font></h3>
+				<p><font><font>应用程序，包括以捐款认可的慈善组织必须是自由的能力</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>21.2</font></font></h3>
+				<p><font><font>慈善捐款的收集必须通过一个网站在Safari或短信来完成</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="legal-requirements"><font><font>22.法律规定</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>22.1</font></font></h3>
+				<p><font><font>应用程序必须遵守任何位置的所有法律要求他们在那里提供给用户。</font><font>这是开发商的责任，了解并遵守当地法律</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.2</font></font></h3>
+				<p><font><font>包含虚假，欺诈或误导性陈述或使用的名称或图标类似于其他应用程序的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.3</font></font></h3>
+				<p><font><font>应用程序，征集，推广，或鼓励犯罪或明显鲁莽行为将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.4</font></font></h3>
+				<p><font><font>应用程序，使非法文件共享将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.5</font></font></h3>
+				<p><font><font>这是设计用作非法赌博辅助工具，包括算牌的应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.6</font></font></h3>
+				<p><font><font>应用程序，允许匿名或恶作剧电话或短信/彩信会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.7</font></font></h3>
+				<p><font><font class="">谁创建的应用程序开发者的暗中尝试发现用户密码或其他私人用户数据将会从iOS开发者计划中删除</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.8</font></font></h3>
+				<p><font><font>含有不是由执法机关公布的酒后驾车检查点，或鼓励，使酒后驾车的应用程序，将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.9</font></font></h3>
+				<p><font><font>该计算药物剂量的应用程序必须提交这些药物的制造商或认可的机构如医院，保险公司和大学</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>22.10</font></font></h3>
+				<p><font><font>使用iTunes音乐预览以未经授权的方式的应用程序将被拒绝</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="passbook"><span id="wallet"><font><font>23.钱包</font></font></span></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>23.1</font></font></h3>
+				<p><font><font>通过钱包可以用来拨打或接收付款，传输提供，或提供的标识（如电影票，机票，优惠券和奖励提供）。</font><font>其他用途可能导致在App的排斥反应，以及撤销钱包凭证</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>23.2</font></font></h3>
+				<p><font><font>通票必须包括合格或App的发行人有效联系信息将被拒绝和钱包凭据可能被撤销</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>23.3</font></font></h3>
+				<p><font><font>通票必须在将要发布自己的名称，商标或品牌或App下传的实体签署将被拒绝，钱包凭据可能被撤销</font></font></p>
+			</li>
+		</ul>
+
+		<h2 class="subhead" id="kids-category"><font><font>24.儿童类别</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>24.1</font></font></h3>
+				<p><font><font>在儿童类的应用程序必须包括隐私政策，并必须符合适用儿童的隐私权法规</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>24.2</font></font></h3>
+				<p><font><font>在儿童类的应用程序可能不包括行为广告（如广告，不得担任基础上，应用程序内的用户的活动广告），并在应用程序提供的任何相关的广告必须适合儿童</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>24.3</font></font></h3>
+				<p><font><font>在幼儿类别的应用程序必须获得父母的同意或允许用户链接的应用程序的输出或从事商业使用前亲栅极</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>24.4</font></font></h3>
+				<p><font><font>在儿童类的应用程序必须专门为孩子们5岁及以下的6-8岁，9-11或年龄进行</font></font></p>
+			</li>
+		</ul>
 
 
-							<h2 class="subhead" id="homekit"><font><font>26. HomeKit</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>26.1</font></font></h3>
-									<p><font><font>使用HomeKit框架的应用程序必须提供家庭自动化服务的主要目的</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>26.2</font></font></h3>
-									<p><font><font>使用HomeKit框架应用程序必须表明自己的营销文字这种用法，他们必须提供一个隐私政策，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>26.3</font></font></h3>
-									<p><font><font>应用程序不能使用来自HomeKit的API收集的数据用于广告或其他用途，基于数据挖掘</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>26.4</font></font></h3>
-									<p><font><font>使用从HomeKit API收集的目的不是改善提供家庭自动化的功能，用户体验和硬件/软件的性能等数据的应用程序将会被拒绝</font></font></p>
-								</li>
-							</ul>
+		<h2 class="subhead" id="extensions"><font><font>25.扩展</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>25.1</font></font></h3>
+				<p><font><font>应用程序托管扩展必须符合</font></font><a href="https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html" onclick="s_objectID=&quot;https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/Extensibility_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序扩展编程指南</font></font></a></p>
+			</li>
+			<li>
+				<h3><font><font>25.2</font></font></h3>
+				<p><font><font>应用程序托管扩展必须提供一些功能（帮助屏幕，其他设置），否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.3</font></font></h3>
+				<p><font><font>托管的应用程序扩展，包括市场营销，广告或应用内购买在他们的扩展视图将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.4</font></font></h3>
+				<p><font><font>键盘扩展，必须发展到下一个键盘提供了一种方法</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.5</font></font></h3>
+				<p><font><font>键盘扩展必须继续工作，没有网络接入，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.6</font></font></h3>
+				<p><font><font>键盘扩展必须提供尽可能的描述中数和十进制类型的键盘</font></font><a href="https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html" onclick="s_objectID=&quot;https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/Extensibility_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序扩展编程指南</font></font></a><font><font>，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.7</font></font></h3>
+				<p><font><font>应用程序提供了键盘的扩展必须具有公用事业的主要类别和隐私权政策，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>25.8</font></font></h3>
+				<p><font><font>应用服务提供键盘扩展可能只收集用户活动以增强IOS设备对他们的键盘延长的功能，或者它们可能会被拒绝</font></font></p>
+			</li>
+		</ul>
 
+		<h2 class="subhead" id="homekit"><font><font>26. HomeKit</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>26.1</font></font></h3>
+				<p><font><font>使用HomeKit框架的应用程序必须有提供家庭自动化服务的主要目的</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>26.2</font></font></h3>
+				<p><font><font>使用HomeKit框架应用程序必须表明他们的营销文本这种用法，他们必须提供隐私政策，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>26.3</font></font></h3>
+				<p><font><font>应用程序不能使用来自HomeKit的API收集的数据用于广告或其他用途，基于数据挖掘</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>26.4</font></font></h3>
+				<p><font><font>使用从HomeKit API收集的目的不是提高提供家庭自动化功能的用户体验还是硬件/软件的性能等数据的应用程序将会被拒绝</font></font></p>
+			</li>
+		</ul>
 
+		<h2 class="subhead" id="healthkit"><font><font>27. HealthKit和人体试验</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>27.1</font></font></h3>
+				<p><font><font>使用HealthKit框架或进行人体试验的医疗目的，如通过使用ResearchKit的应用程序，必须符合各领土和3.3.39适用法律，该应用程序是可用，以及第3.3.28在</font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_4&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS的开发者计划许可协议</font></font></a></p>
+			</li>
+			<li>
+				<h3><font><font>27.2</font></font></h3>
+				<p><font><font>应用程序的编写虚假或不准确的数据转换成HealthKit将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.3</font></font></h3>
+				<p><font><font>使用HealthKit框架存储在iCloud的用户的健康信息的应用程序将会被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.4</font></font></h3>
+				<p><font><font>应用程序不得使用或泄露给第三方的HealthKit API或健康相关的人体试验用于广告或其他用途，基于数据挖掘的目的，而不是改善健康或卫生研究的目的以外收集用户数据</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.5</font></font></h3>
+				<p><font><font>应用程序共享，通过与第三方的HealthKit API未经用户许可获取的用户数据将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.6</font></font></h3>
+				<p><font><font>使用HealthKit框架应用程序必须标明与保健应用程序集成在他们的营销文本，必须清楚地确定在应用程序的用户界面HealthKit功能</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.7</font></font></h3>
+				<p><font><font>使用HealthKit框架或进行人体试验应用程序必须提供隐私政策，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.8</font></font></h3>
+				<p><font><font>应用程序，提供诊断，治疗建议，或控制硬件设计，诊断或治疗不按要求提供书面监管部门批准的医疗条件将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.9</font></font></h3>
+				<p><font><font>应用程序进行健康相关的人体试验必须从参与者获得的同意，或在未成年人，其父母或监护人的情况下。</font><font>此种同意必须包括（一）的性质，目的和研究的时间; </font><font>（二）程序，风险和利益的参与者; </font><font>（三）有关保密和处理数据（包括与任何第三方共享）的信息; </font><font>（四）联络点参与问题的; </font><font>（五）撤离过程</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>27.10</font></font></h3>
+				<p><font><font>应用程序进行健康相关的人体试验必须保证从一个独立的伦理审查委员会的批准。</font><font>此类批准证明必须按要求提供。</font></font></p>
+			</li>
+		</ul>
 
+		<h2 class="subhead" id="testflight"><font><font>28. TestFlight</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>28.1</font></font></h3>
+				<p><font><font>应用程序只能使用TestFlight，以供公众发行beta测试的应用程序和必须遵守的完整的应用程序审查指南</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>28.2</font></font></h3>
+				<p><font><font>使用TestFlight应用程序必须提交审查每当一个版本包含重大变更的内容或功能</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>28.3</font></font></h3>
+				<p><font><font>使用TestFlight应用程序可能无法分配给测试人员，以换取任何形式的补偿</font></font></p>
+			</li>
+		</ul>
 
-							<h2 class="subhead" id="healthkit"><font><font>27. HealthKit</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>27.1</font></font></h3>
-									<p><font><font>使用HealthKit框架的应用程序必须符合各领土及的3.3.39适用法律中的应用是可用，以及第3.3.28 </font></font><a href="https://developer.apple.com/membercenter/index.action#agreements" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/index.action#agreements_4&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS开发者计划许可协议</font></font></a></p>
-								</li>
-								<li>
-									<h3><font><font>27.2</font></font></h3>
-									<p><font><font>应用程序的编写虚假或不准确的数据为HealthKit将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.3</font></font></h3>
-									<p><font><font>使用HealthKit框架存储在iCloud的用户的健康信息的应用程序将会被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.4</font></font></h3>
-									<p><font><font>应用程序可能无法使用来自HealthKit API收集用于广告或比改善健康，医疗，健身等管理使用等基于数据挖掘的目的的用户数据，或为医学研究为目的</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.5</font></font></h3>
-									<p><font><font>应用程序共享，通过与第三方的HealthKit API未经用户许可获取的用户数据将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.6</font></font></h3>
-									<p><font><font>使用HealthKit框架应用程序必须标明与保健应用程序集成在他们的营销文本，必须清楚地确定在应用程序的用户界面HealthKit功能</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.7</font></font></h3>
-									<p><font><font>使用HealthKit框架的应用程序必须提供的隐私政策，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>27.8</font></font></h3>
-									<p><font><font>应用程序，提供诊断，治疗建议，或控制硬件设计，诊断或治疗不按要求提供书面监管部门批准的医疗条件将被拒绝</font></font></p>
-								</li>
-							</ul>
+		<h2 class="subhead" id="apple-pay"><font><font>29.苹果支付</font></font></h2>
+		<ul class="subsection">
+			<li>
+				<h3><font><font>29.1</font></font></h3>
+				<p><font><font>使用苹果付费应用程序必须先于销售的任何产品或服务的提供所有材料采购的信息给用户，否则将被拒绝; </font><font>使用苹果付费应用程序提供定期付款必须在最低限度，透露了续约的长度和事实，即它会继续下去，直到取消，将在每个时期提供什么，这将需要支付给客户的收费，如何取消。</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>29.2</font></font></h3>
+				<p><font><font>使用苹果付费应用程序必须使用苹果的正常支付品牌和用户界面元素，并在描述</font></font><a href="https://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf" onclick="s_objectID=&quot;https://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果支付识别指南</font></font></a><font><font>，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>29.3</font></font></h3>
+				<p><font><font>使用苹果付款，采购机制，应用程序可能无法提供违反，其中的商品或服务进行交付的任何领土的法律，不得用于任何非法目的的商品或服务</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>29.4</font></font></h3>
+				<p><font><font>使用苹果付费应用程序必须提供隐私政策，否则将被拒绝</font></font></p>
+			</li>
+			<li>
+				<h3><font><font>29.5</font></font></h3>
+				<p><font><font>使用苹果支付只能通过共享苹果收购用户数据和第三方提供时，请应用程序，以促进或改善交付货物和服务的，或者符合法律要求</font></font></p>
+			</li>
+		</ul>
 
+		<h2 class="subhead"><font><font>活的文件</font></font></h2>
+		<p class="thirteen"><font><font>这个文件是我们最大的努力来分享我们如何审查提交到App Store的应用程序，我们希望这是一个有益的指导，为您开发并提交您的应用程序。</font><font>这是一个活的文件，将演变为我们提出了新的应用程序和情况，我们将定期更新，以反映这些变化。</font></font></p>
+		<p class="thirteen"><font><font>感谢您开发的iOS。</font><font>尽管这个文件是什么不能做一个强大的列表，还请记住什么，你必须做的更短名单。</font><font>最重要的是，我们一起努力的惊喜和喜悦的用户。</font><font>向他们展示他们的世界以创新的方式，并让他们与它进行交互前所未有的。</font><font>根据我们的经验，用户真正回应润色，无论是在功能和用户界面。</font><font>多走一英里。</font><font>给他们超过他们的期望。</font><font>并带他们，他们从来没有去过的地方。</font><font>我们随时准备提供帮助。</font></font></p>
+		<p class="updated"><font><font>©苹果公司，2015年</font></font></p>
 
-							<h2 class="subhead" id="testflight"><font><font>28. TestFlight</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>28.1</font></font></h3>
-									<p><font><font>应用可能只使用TestFlight以供公众发行beta测试的应用程序和必须遵守的全部应用程序审查指南</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>28.2</font></font></h3>
-									<p><font><font>使用TestFlight的应用程序必须提交审查每当一个版本包含重大变更的内容或功能</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>28.3</font></font></h3>
-									<p><font><font>使用TestFlight的应用程序可能无法分配给测试人员，以换取任何形式的补偿</font></font></p>
-								</li>
-							</ul>
-
-
-							<h2 class="subhead" id="apple-pay"><font><font>29.苹果支付</font></font></h2>
-							<ul class="subsection">
-								<li>
-									<h3><font><font>29.1</font></font></h3>
-									<p><font><font>使用苹果应用程序付费之前，必须出售任何商品或服务的提供所有材料采购信息给用户，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>29.2</font></font></h3>
-									<p><font><font>使用苹果应用程序付费必须使用苹果支付正确的品牌和用户界面元素，并在描述</font></font><a href="https://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf" onclick="s_objectID=&quot;https://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果支付识别指南</font></font></a><font><font>，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>29.3</font></font></h3>
-									<p><font><font>使用苹果支付的采购机制，应用程序可能无法提供违反，其中的商品或服务将交付的任何领土的法律，不得用于任何非法目的的商品或服务</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>29.4</font></font></h3>
-									<p><font><font>使用苹果应用程序付费必须提供隐私政策，否则将被拒绝</font></font></p>
-								</li>
-								<li>
-									<h3><font><font>29.5</font></font></h3>
-									<p><font><font>使用苹果支付只能通过共享苹果收购的用户数据与第三方提供的薪酬时，应用程序，以促进或改善交付货物和服务，或符合法律规定</font></font></p>
-								</li>
-							</ul>
-
-							<h2 class="subhead"><font><font>活的文件</font></font></h2>
-							<p class="thirteen"><font><font>该文件代表了我们最大的努力，分享我们如何审查提交到App Store的应用程序，我们希望它是一个有用的指南为您开发并提交您的应用程序。</font><font>它是一个活的文件，将演变为我们提出了新的应用程序和情况，我们将定期更新，以反映这些变化。</font></font></p>
-							<p class="thirteen"><font><font>感谢您开发的iOS。</font><font class="">尽管这个文件是什么不能做一个强大的列表，还请记住什么，你必须做的更短名单。</font><font>最重要的是，我们一起努力的惊喜和喜悦的用户。</font><font>他们展示他们的世界以创新的方式，并让他们与它进行交互前所未有。</font><font>根据我们的经验，用户真正响应打磨，无论是在功能和用户界面。</font><font>多走一英里。</font><font>给他们超过他们的期望。</font><font>并采取他们，他们从来没有去过的地方。</font><font>我们愿意提供帮助。</font></font></p>
-							<p class="updated"><font><font>©苹果公司，2014年</font></font></p>
-
-		</div><!-- /content -->
-
-
+	</div><!-- /content -->
 
 	<div id="globalfooter">
 		<div id="breadory">
 			<ol id="breadcrumbs">
-				<li class="home"><a href="https://developer.apple.com/" onclick="s_objectID=&quot;https://developer.apple.com/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>开发人员</font></font></a></li>
+				<li class="home"><a href="https://developer.apple.com/" onclick="s_objectID=&quot;https://developer.apple.com/_3&quot;;return this.s_oc?this.s_oc(e):true"><font><font>开发者</font></font></a></li>
 				<li><a href="https://developer.apple.com/app-store/review/" onclick="s_objectID=&quot;https://developer.apple.com/app-store/review/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序审查</font></font></a></li>
 				<li><font><font>应用程序商店审查指南</font></font></li>
 			</ol>
-				<div id="directorynav" class="ipoditunes">
-		<div id="dn-cola" class="column first">
-			<h3><a href="https://developer.apple.com/technologies/" onclick="s_objectID=&quot;https://developer.apple.com/technologies/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>什么是新的</font></font></a></h3>
-			<ul>			
-				<li><a href="https://developer.apple.com/ios8/" onclick="s_objectID=&quot;https://developer.apple.com/ios8/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS的8</font></font></a></li>
-				<li><a href="https://developer.apple.com/osx/whats-new/" onclick="s_objectID=&quot;https://developer.apple.com/osx/whats-new/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>OS X约塞米蒂</font></font></a></li>
-				<li><a href="https://developer.apple.com/swift/" onclick="s_objectID=&quot;https://developer.apple.com/swift/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>迅速</font></font></a></li>
-				<li><a href="https://developer.apple.com/xcode/" onclick="s_objectID=&quot;https://developer.apple.com/xcode/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Xcode的6</font></font></a></li>
-			</ul>
-		</div><!--/dn-cola-->
-		<div id="dn-colb" class="column">
-			<h3><a href="https://developer.apple.com/resources/" onclick="s_objectID=&quot;https://developer.apple.com/resources/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>资源</font></font></a></h3>
-			<ul>
-				<li><a href="https://developer.apple.com/devcenter/ios/index.action" onclick="s_objectID=&quot;https://developer.apple.com/devcenter/ios/index.action_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS开发中心</font></font></a></li>
-				<li><a href="https://developer.apple.com/devcenter/mac/index.action" onclick="s_objectID=&quot;https://developer.apple.com/devcenter/mac/index.action_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Mac开发中心</font></font></a></li>
-				<li><a href="https://developer.apple.com/devcenter/safari/index.action" onclick="s_objectID=&quot;https://developer.apple.com/devcenter/safari/index.action_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Safari开发中心</font></font></a></li>
-				<li><a href="https://developer.apple.com/app-store/" onclick="s_objectID=&quot;https://developer.apple.com/app-store/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序商店</font></font></a></li>
-				<li><a href="https://developer.apple.com/iad/" onclick="s_objectID=&quot;https://developer.apple.com/iad/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iAd的</font></font></a></li>
-				<li><a href="https://developer.apple.com/icloud/" onclick="s_objectID=&quot;https://developer.apple.com/icloud/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>icloud的</font></font></a></li>
-			</ul>
-		</div><!--/dn-colb-->
-		<div id="dn-colc" class="column">
-			<h3 class="empty">&nbsp;</h3>
-			<ul>
-				<li><a href="https://developer.apple.com/devforums/" onclick="s_objectID=&quot;https://developer.apple.com/devforums/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>论坛</font></font></a></li>
-				<li><a href="https://developer.apple.com/videos/" onclick="s_objectID=&quot;https://developer.apple.com/videos/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>视频</font></font></a></li>
-				<li><a href="https://developer.apple.com/softwarelicensing/" onclick="s_objectID=&quot;https://developer.apple.com/softwarelicensing/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>许可和商标</font></font></a></li>
-				<li><a href="https://developer.apple.com/hardwaredrivers/" onclick="s_objectID=&quot;https://developer.apple.com/hardwaredrivers/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>硬件和驱动程序</font></font></a></li>
-				<li><a href="https://developer.apple.com/resources/cases/" onclick="s_objectID=&quot;https://developer.apple.com/resources/cases/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iPod，iPhone和iPad案例</font></font></a></li>
-				<li><a href="https://developer.apple.com/opensource/" onclick="s_objectID=&quot;https://developer.apple.com/opensource/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>开源</font></font></a></li>
-			</ul>
-		</div><!--/dn-colc-->
-		<div id="dn-cold" class="column">
-			<h3><a href="https://developer.apple.com/programs/" onclick="s_objectID=&quot;https://developer.apple.com/programs/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>计划</font></font></a></h3>
-			<ul>
-				<li><a href="https://developer.apple.com/programs/ios/" onclick="s_objectID=&quot;https://developer.apple.com/programs/ios/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS开发者计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/programs/ios/enterprise/" onclick="s_objectID=&quot;https://developer.apple.com/programs/ios/enterprise/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS开发企业计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/programs/ios/university/" onclick="s_objectID=&quot;https://developer.apple.com/programs/ios/university/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS的开发者大学计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/programs/mac/" onclick="s_objectID=&quot;https://developer.apple.com/programs/mac/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Mac开发者计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/programs/safari/" onclick="s_objectID=&quot;https://developer.apple.com/programs/safari/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Safari浏览器开发者计划</font></font></a></li>				
-				<li><a href="https://developer.apple.com/programs/mfi/" onclick="s_objectID=&quot;https://developer.apple.com/programs/mfi/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>MFI项目</font></font></a></li>
-			</ul>
-		</div><!--/dn-cold-->
-		<div id="dn-cole" class="column last">
-			<h3><a href="https://developer.apple.com/support/" onclick="s_objectID=&quot;https://developer.apple.com/support/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>支持</font></font></a></h3>
-			<ul>
-				<li><a href="https://developer.apple.com/support/ios/" onclick="s_objectID=&quot;https://developer.apple.com/support/ios/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS开发者计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/support/mac/" onclick="s_objectID=&quot;https://developer.apple.com/support/mac/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Mac开发者计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/support/safari/" onclick="s_objectID=&quot;https://developer.apple.com/support/safari/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Safari浏览器开发者计划</font></font></a></li>
-				<li><a href="https://developer.apple.com/support/appstore/" onclick="s_objectID=&quot;https://developer.apple.com/support/appstore/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>应用程序商店</font></font></a></li>
-				<li><a href="https://developer.apple.com/support/resources/itunes-connect.html" onclick="s_objectID=&quot;https://developer.apple.com/support/resources/itunes-connect.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>在iTunes Connect</font></font></a></li>
-				<li><a href="https://developer.apple.com/support/technical/" onclick="s_objectID=&quot;https://developer.apple.com/support/technical/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>技术支援</font></font></a></li>
-			</ul>
-		</div><!--/dn-cole-->
-		<div class="capbottom"></div>
-	</div><!--/directorynav-->
-		</div><!--/breadory-->
-		<p class="gf-buy"><font><font>店的</font></font><a href="http://www.apple.com/store/" onclick="s_objectID=&quot;http://www.apple.com/store/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>苹果网上商店</font></font></a><font><font>（1-800-MY-APPLE），访问</font></font><a href="http://www.apple.com/retail/" onclick="s_objectID=&quot;http://www.apple.com/retail/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Apple Store零售店</font></font></a><font><font>，或找一个</font></font><a href="http://www.apple.com/buy/locator/" onclick="s_objectID=&quot;http://www.apple.com/buy/locator/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>经销商</font></font></a><font><font>。</font></font></p>
-<ul class="gf-links piped">
-	<li><a href="https://developer.apple.com/news/" class="first" onclick="s_objectID=&quot;https://developer.apple.com/news/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>新闻</font></font></a></li>
-	<li><a href="https://developer.apple.com/register/" onclick="s_objectID=&quot;https://developer.apple.com/register/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>注册</font></font></a></li>
-	<li><a href="https://developer.apple.com/bug-reporting/" onclick="s_objectID=&quot;https://developer.apple.com/bug-reporting/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>报告错误</font></font></a></li>
-	<li><a href="https://developer.apple.com/contact/" onclick="s_objectID=&quot;https://developer.apple.com/contact/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>联系我们</font></font></a></li>
-</ul>
-<div class="gf-sosumi">
-	<p><font><font>版权所有©2015年苹果公司保留所有权利。</font></font></p>
-	<ul class="piped">
-		<li><a href="http://www.apple.com/legal/internet-services/terms/site.html" class="first" onclick="s_objectID=&quot;http://www.apple.com/legal/internet-services/terms/site.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>使用条款</font></font></a></li>
-		<li><a href="http://www.apple.com/privacy/" onclick="s_objectID=&quot;http://www.apple.com/privacy/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>隐私政策</font></font></a></li>
-	</ul>
+			<div id="directorynav" class="directorynav">
+	<div id="dn-cola" class="column">
+		<h3><a href="https://developer.apple.com/platforms/" onclick="s_objectID=&quot;https://developer.apple.com/platforms/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>平台</font></font></a></h3>
+		<ul>
+			<li><a href="https://developer.apple.com/ios/" onclick="s_objectID=&quot;https://developer.apple.com/ios/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>的iOS</font></font></a></li>
+			<li><a href="https://developer.apple.com/osx/" onclick="s_objectID=&quot;https://developer.apple.com/osx/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>OS X</font></font></a></li>
+			<li><a href="https://developer.apple.com/watchos/" onclick="s_objectID=&quot;https://developer.apple.com/watchos/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>watchOS</font></font></a></li>
+			<li><a href="https://developer.apple.com/tvos/" onclick="s_objectID=&quot;https://developer.apple.com/tvos/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>tvOS</font></font></a></li>
+		</ul>
+	</div>
+	<div id="dn-colb" class="column">
+		<h3><a href="https://developer.apple.com/resources/" onclick="s_objectID=&quot;https://developer.apple.com/resources/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>资源</font></font></a></h3>
+		<ul>
+			<li><a href="https://developer.apple.com/xcode/" onclick="s_objectID=&quot;https://developer.apple.com/xcode/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>Xcode中</font></font></a></li>
+			<li><a href="https://developer.apple.com/swift/" onclick="s_objectID=&quot;https://developer.apple.com/swift/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>斯威夫特</font></font></a></li>
+			<li><a href="https://developer.apple.com/library/" onclick="s_objectID=&quot;https://developer.apple.com/library/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>文件</font></font></a></li>
+			<li><a href="https://developer.apple.com/videos/" onclick="s_objectID=&quot;https://developer.apple.com/videos/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>视频</font></font></a></li>
+			<li><a href="https://forums.developer.apple.com/" onclick="s_objectID=&quot;https://forums.developer.apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>论坛</font></font></a></li>
+		</ul>
+	</div>
+	<div id="dn-colc" class="column">
+		<h3><a href="https://developer.apple.com/programs/" onclick="s_objectID=&quot;https://developer.apple.com/programs/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>程式</font></font></a></h3>
+		<ul>
+			<li><a href="https://developer.apple.com/programs/" onclick="s_objectID=&quot;https://developer.apple.com/programs/_3&quot;;return this.s_oc?this.s_oc(e):true"><font><font>开发者计划</font></font></a></li>
+			<li><a href="https://developer.apple.com/programs/enterprise/" onclick="s_objectID=&quot;https://developer.apple.com/programs/enterprise/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>企业计划</font></font></a></li>
+			<li><a href="https://developer.apple.com/programs/ios/university/" onclick="s_objectID=&quot;https://developer.apple.com/programs/ios/university/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>iOS的大学计划</font></font></a></li>
+			<li><a href="https://developer.apple.com/programs/mfi/" onclick="s_objectID=&quot;https://developer.apple.com/programs/mfi/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>MFI项目</font></font></a></li>
+		</ul>
+	</div>
+	<div id="dn-cold" class="column">
+		<h3><a href="https://developer.apple.com/support/" onclick="s_objectID=&quot;https://developer.apple.com/support/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>支撑</font></font></a></h3>
+		<ul>
+			<li><a href="https://developer.apple.com/support/development/" onclick="s_objectID=&quot;https://developer.apple.com/support/development/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>发育</font></font></a></li>
+			<li><a href="https://developer.apple.com/support/distribution/" onclick="s_objectID=&quot;https://developer.apple.com/support/distribution/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>分布</font></font></a></li>
+			<li><a href="https://developer.apple.com/support/membership/" onclick="s_objectID=&quot;https://developer.apple.com/support/membership/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>会员</font></font></a></li>
+			<li><a href="https://developer.apple.com/system-status/" onclick="s_objectID=&quot;https://developer.apple.com/system-status/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>系统状态</font></font></a></li>
+		</ul>
+	</div>
+	<div id="dn-cole" class="column">
+		<h3><a href="https://developer.apple.com/membercenter/" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/_2&quot;;return this.s_oc?this.s_oc(e):true"><font><font>会员中心</font></font></a></h3>
+		<ul>
+			<li><a href="https://developer.apple.com/membercenter/" onclick="s_objectID=&quot;https://developer.apple.com/membercenter/_3&quot;;return this.s_oc?this.s_oc(e):true"><font><font>开发者账户</font></font></a></li>
+			<li><a href="https://developer.apple.com/account/overview.action" onclick="s_objectID=&quot;https://developer.apple.com/account/overview.action_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>证书，身份证，及档案</font></font></a></li>
+			<li><a href="https://developer.apple.com/terms/" onclick="s_objectID=&quot;https://developer.apple.com/terms/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>许可协议</font></font></a></li>
+		</ul>
+	</div>
 </div>
-<div id="localization-links">
-	<ul>
-		<li><a href="https://developer.apple.com/cn/" title="简体中国" onclick="s_objectID=&quot;https://developer.apple.com/cn/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>简体中文</font></font></a></li>
-		<li><a href="https://developer.apple.com/jp/" title="日本" onclick="s_objectID=&quot;https://developer.apple.com/jp/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>日本语</font></font></a></li>
-		<li><a href="https://developer.apple.com/kr/" title="朝鲜的" onclick="s_objectID=&quot;https://developer.apple.com/kr/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>한국어</font></font></a></li>
-	</ul>
-</div>
-	</div><!--/globalfooter-->
 
-<div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 761px; top: 325px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./应用程序商店审查指南 - 苹果开发者_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">It has been a rewarding experience - both professionally and financially - for hundreds of thousands of developers and we want to help you join this successful group.</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div><embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0"></body></html>
+		</div>
+		<ul class="gf-links piped footer-links">
+  <li><a href="https://developer.apple.com/news/" class="first" onclick="s_objectID=&quot;https://developer.apple.com/news/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>信息</font></font></a></li>
+  <li><a href="https://developer.apple.com/bug-reporting/" onclick="s_objectID=&quot;https://developer.apple.com/bug-reporting/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>报告错误</font></font></a></li>
+  <li><a href="https://developer.apple.com/contact/" onclick="s_objectID=&quot;https://developer.apple.com/contact/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>联系我们</font></font></a></li>
+</ul>
+
+<div class="gf-sosumi footer-sosumi">
+  <p><font><font>版权所有©2015年苹果公司保留所有权利。</font></font></p>
+    <ul class="piped">
+        <li><a href="http://www.apple.com/legal/internet-services/terms/site.html" class="first" onclick="s_objectID=&quot;http://www.apple.com/legal/internet-services/terms/site.html_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>使用条款</font></font></a></li>
+        <li><a href="http://www.apple.com/privacy/privacy-policy/" onclick="s_objectID=&quot;http://www.apple.com/privacy/privacy-policy/_1&quot;;return this.s_oc?this.s_oc(e):true"><font><font>隐私政策</font></font></a></li>
+    </ul>
+</div>
+
+<!--<div id="gf-links piped footer-links">
+	<ul>
+		<li><a href="/cn/" title="Simplified Chinese">简体中文</a></li>
+		<li><a href="/jp/" title="Japanese">日本語</a></li>
+		<li><a href="/kr/" title="Korean">한국어</a></li>
+	</ul>
+</div>-->
+
+	</div><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 735px; top: 3986px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./应用程序商店审查指南 - 苹果开发者_files/translate_24dp.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">Developers who create Apps that surreptitiously attempt to discover user passwords or other private user data will be removed from the iOS Developer Program</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div>
+
+</body></html>
