@@ -1,3 +1,5 @@
+地址链接：https://developer.apple.com/app-store/review/guidelines/
+
 应用程序商店审查指南
 简介
 
